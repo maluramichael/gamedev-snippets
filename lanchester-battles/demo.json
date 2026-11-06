@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Lanchester: warum Übermacht quadratisch zählt",
+    "en": "Lanchester's Laws: Why Numbers Count Squared"
+  },
+  "hint": {
+    "de": "Zwei Heere kämpfen, rechts laufen die Kurven des Gesetzes mit. Die Chips wechseln zwischen Fernkampf (Quadratgesetz) und Duellen (lineares Gesetz), Heeresgröße, Stärke von B, Reichweite und Zielwahl, R startet neu.",
+    "en": "Two armies fight while the curves of the law run next to them. The chips switch between ranged (square law) and duels (linear law), army size, strength of B, range and aiming, R restarts."
+  },
+  "post": {
+    "de": "lanchester-uebermacht",
+    "en": "lanchesters-laws"
+  },
+  "repo": "lanchester-battles",
+  "category": "gameplay",
+  "publishAt": "2027-12-03T08:00:00+01:00"
+}
