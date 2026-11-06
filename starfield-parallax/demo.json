@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Sternfeld mit Tiefe",
+    "en": "A Starfield With Depth"
+  },
+  "hint": {
+    "de": "Flug durch ein Sternfeld. Taste 1 zeigt drei flache Ebenen, Taste 2 echte Perspektive. Die Maus lenkt den Fluchtpunkt, das Mausrad ändert das Tempo, die Draufsicht rechts unten zeigt, wo die Sterne liegen. Die orangen Chips schalten Fehler ein: Wiedereintritt in zufälliger Tiefe und Division ohne Test an der Nahebene. Tasten: 1 bis 5, S, M, A, T, P, Z, R.",
+    "en": "A flight through a starfield. Key 1 shows three flat layers, key 2 real perspective. The mouse steers the vanishing point, the wheel changes the speed, the top view at the bottom right shows where the stars are. The orange chips switch on mistakes: re-entry at a random depth and division without a test at the near plane. Keys: 1 to 5, S, M, A, T, P, Z, R."
+  },
+  "post": {
+    "de": "sternfeld-mit-tiefe",
+    "en": "starfield-with-depth"
+  },
+  "repo": "starfield-parallax",
+  "category": "space",
+  "publishAt": "2027-11-26T08:00:00+01:00"
+}
