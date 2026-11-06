@@ -1,0 +1,16 @@
+{
+  "title": {
+    "de": "Raytracing",
+    "en": "Raytracing"
+  },
+  "hint": {
+    "de": "Die Maus bewegt das Licht, mit den Schaltflächen unten schaltest du Schatten, Reflexionen und Auflösung um und siehst rechts, was das kostet.",
+    "en": "The mouse moves the light; the buttons below switch shadows, reflections and resolution, and the stats on the right show what each costs."
+  },
+  "post": {
+    "de": "raytracing",
+    "en": "raytracing"
+  },
+  "repo": "raytracing",
+  "publishAt": "2026-12-18T08:00:00+01:00"
+}
