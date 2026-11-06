@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Hex: Reichweite und Sicht",
+    "en": "Hex: Range and Sight"
+  },
+  "hint": {
+    "de": "Ziehen malt Wände, die Figur lässt sich ziehen. Chips 1 und 2: Schleife gegen Flood Fill, 3 bis 5: drei Arten von Sicht. Mit - und + ändert sich die Größe, Hover zeigt die Linien.",
+    "en": "Drag to paint walls, drag the unit to move it. Chips 1 and 2: loop versus flood fill, 3 to 5: three kinds of sight. - and + change the size, hover shows the lines."
+  },
+  "post": {
+    "de": "hex-reichweite-und-sicht",
+    "en": "hex-range-and-sight"
+  },
+  "repo": "hex-reichweite-sicht",
+  "category": "grid",
+  "publishAt": "2027-02-26T08:00:00+01:00"
+}
