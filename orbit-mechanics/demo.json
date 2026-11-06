@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Umlaufbahnen",
+    "en": "Orbits"
+  },
+  "hint": {
+    "de": "Klicken setzt eine Kreisbahn, Ziehen gibt die Startgeschwindigkeit vor. Die Kepler-Bahn ist exakt, Euler spiralt nach außen, semi-implizit und Verlet halten die Bahn.",
+    "en": "Click for a circular orbit, drag to set the launch velocity. The Kepler orbit is exact, Euler spirals outward, semi-implicit and Verlet stay on the orbit."
+  },
+  "post": {
+    "de": "umlaufbahnen",
+    "en": "orbits"
+  },
+  "repo": "orbit-mechanics",
+  "category": "space",
+  "publishAt": "2027-09-17T08:00:00+02:00"
+}
