@@ -35,9 +35,9 @@ Serve `build/web/<demo>/` with any static file server, WebAssembly needs the rig
 
 | Folder | Topic | Blog post |
 |--------|-------|-----------|
-| `update-loop/` | Fixed timestep with an accumulator and interpolation | (published 2026-11-13) |
-| `delta-time/` | Delta time: motion independent of the frame rate | (published 2026-11-20) |
-| `fixed-timestep/` | Fixed timestep: drawing with interpolation | (published 2026-11-27) |
+| `update-loop/` | Fixed timestep with an accumulator and interpolation | (on malura.de from 2026-11-13) |
+| `delta-time/` | Delta time: motion independent of the frame rate | (on malura.de from 2026-11-20) |
+| `fixed-timestep/` | Fixed timestep: drawing with interpolation | (on malura.de from 2026-11-27) |
 
 ## Adding a demo
 

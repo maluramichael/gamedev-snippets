@@ -2,6 +2,7 @@
 import { barModel } from "/_shared/index.js";
 
 const params = new URLSearchParams(location.search);
+document.documentElement.style.setProperty("--bar", params.get("embed") === "1" ? "0px" : "38px");
 if (params.get("embed") !== "1") {
   try {
     const response = await fetch("demo.json", { cache: "no-cache" });

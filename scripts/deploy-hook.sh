@@ -38,6 +38,7 @@ while read -r old new ref; do
 
     mkdir -p build/web/_shared
     cp site/index.js site/bar.js site/gallery.js site/site.css site/reindex.sh build/web/_shared/
+    cp -r site/fonts build/web/_shared/fonts
     cp site/index.html build/web/index.html
 
     # Guard against a silently failed build: at least one demo and the Pyodide runtime must exist.

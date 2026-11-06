@@ -1,11 +1,11 @@
-// Shared logic for demos.malura.de: gallery filtering and the link bar.
+// Shared logic for demos.malura.de: gallery validation and the link bar.
 // Plain ES module, no dependencies, tested with `node --test site/test/index.test.mjs`.
 
 const BLOG = "https://malura.de";
 const REPO = "https://github.com/maluramichael/gamedev-snippets";
 export const KOFI_URL = "https://ko-fi.com/malura";
 
-/** True when the post of a demo is visible. Demos without publishAt count as live. */
+/** True when the blog post of a demo is public. Demos without publishAt count as live. */
 export function isPostLive(publishAt, now = new Date()) {
   if (publishAt === undefined || publishAt === null) return true;
   const time = Date.parse(publishAt);
@@ -13,17 +13,19 @@ export function isPostLive(publishAt, now = new Date()) {
   return time <= now.getTime();
 }
 
-/** Names of the demos that belong in the gallery. Throws with the demo name on a bad publishAt. */
-export function visibleDemos(demos, now = new Date()) {
-  return demos
-    .filter((demo) => {
-      try {
-        return isPostLive(demo.publishAt, now);
-      } catch (error) {
-        throw new Error(`${demo.name}: ${error.message}`);
-      }
-    })
-    .map((demo) => demo.name);
+/**
+ * Names of the demos that belong in the gallery: all of them. Demos go live as soon as they are pushed,
+ * publishAt only decides when the link to the blog post appears. Throws with the demo name on a bad publishAt.
+ */
+export function listedDemos(demos) {
+  return demos.map((demo) => {
+    try {
+      isPostLive(demo.publishAt);
+    } catch (error) {
+      throw new Error(`${demo.name}: ${error.message}`);
+    }
+    return demo.name;
+  });
 }
 
 /** What the link bar shows for one demo, in language "de" or "en". */

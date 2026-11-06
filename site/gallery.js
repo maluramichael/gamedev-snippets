@@ -1,8 +1,7 @@
-import { isPostLive, visibleDemos, KOFI_URL } from "/_shared/index.js";
+import { isPostLive, listedDemos, KOFI_URL } from "/_shared/index.js";
 
 const lang = (navigator.language || "en").startsWith("de") ? "de" : "en";
 const cards = document.getElementById("cards");
-const preview = new URLSearchParams(location.search).has("preview");
 
 async function loadDemo(name) {
   try {
@@ -36,11 +35,11 @@ function card(demo) {
   hint.textContent = demo.hint?.[lang] ?? "";
   text.append(title, hint);
 
-  if (!isPostLive(demo.publishAt)) {
+  if (demo.publishAt && !isPostLive(demo.publishAt)) {
     const badge = document.createElement("span");
     badge.className = "badge";
     const date = new Date(demo.publishAt).toLocaleDateString(lang === "de" ? "de-DE" : "en-GB", { timeZone: "Europe/Berlin" });
-    badge.textContent = lang === "de" ? `erscheint am ${date}` : `appears on ${date}`;
+    badge.textContent = lang === "de" ? `Post folgt am ${date}` : `post on ${date}`;
     shot.append(badge);
   }
 
@@ -60,18 +59,15 @@ try {
       return false;
     }
   });
-  const listed = new Set(visibleDemos(valid));
+  const listed = new Set(listedDemos(valid));
   const shown = valid
-    .filter((demo) => preview || listed.has(demo.name))
-    .sort((a, b) => Date.parse(b.publishAt ?? 0) - Date.parse(a.publishAt ?? 0));
+    .filter((demo) => listed.has(demo.name))
+    .sort((a, b) => Date.parse(a.publishAt ?? 0) - Date.parse(b.publishAt ?? 0));
   if (shown.length === 0) {
     cards.innerHTML = "";
     const empty = document.createElement("p");
     empty.className = "empty";
-    empty.textContent =
-      lang === "de"
-        ? "Noch keine Demos veröffentlicht. Sie erscheinen mit dem jeweiligen Blogpost, die erste am 13. November. Vorschau: ?preview an die Adresse hängen."
-        : "No demos published yet. Each one appears with its blog post, the first on 13 November. Preview: append ?preview to the address.";
+    empty.textContent = lang === "de" ? "Noch keine Demos vorhanden." : "No demos yet.";
     cards.replaceWith(empty);
   } else {
     cards.replaceChildren(...shown.map(card));

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { isPostLive, visibleDemos, barModel } from "../index.js";
+import { isPostLive, listedDemos, barModel } from "../index.js";
 
 const now = new Date("2026-11-10T12:00:00Z");
 
@@ -13,17 +13,17 @@ test("isPostLive is false before and true after publishAt", () => {
   assert.equal(isPostLive("2026-11-01T08:00:00+01:00", now), true);
 });
 
-test("visibleDemos hides demos whose post is not live yet", () => {
+test("listedDemos lists every demo, whether its post is live or not", () => {
   const demos = [
     { name: "past", publishAt: "2026-11-01T08:00:00+01:00" },
     { name: "future", publishAt: "2026-11-13T08:00:00+01:00" },
     { name: "undated" },
   ];
-  assert.deepEqual(visibleDemos(demos, now), ["past", "undated"]);
+  assert.deepEqual(listedDemos(demos), ["past", "future", "undated"]);
 });
 
-test("visibleDemos names the demo with an invalid publishAt", () => {
-  assert.throws(() => visibleDemos([{ name: "broken", publishAt: "nope" }], now), /broken/);
+test("listedDemos names the demo with an invalid publishAt", () => {
+  assert.throws(() => listedDemos([{ name: "broken", publishAt: "nope" }]), /broken/);
 });
 
 const demo = {

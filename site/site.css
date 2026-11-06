@@ -1,25 +1,39 @@
-/* Shared styles for demos.malura.de: link bar and gallery. Light, plain, a bit 90s. */
-.demo-bar { display: flex; flex-wrap: wrap; gap: 4px 14px; justify-content: center; padding: 8px 12px;
-  border-top: 1px solid #bbb; background: #f4f4f4; font: 13px/1.4 system-ui, sans-serif; color: #555; }
-.demo-bar a { color: #1a4fa0; text-decoration: none; }
+/* Shared styles for demos.malura.de: link bar and gallery. Same font and colors as malura.de. */
+@font-face { font-family: "JetBrains Mono"; font-weight: 400; font-display: swap;
+  src: url("/_shared/fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 700; font-display: swap;
+  src: url("/_shared/fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2"); }
+
+:root { --teal: #0d9488; --teal-dark: #0f766e; --teal-soft: #ccfbf1; --ink: #111827; --muted: #6b7280;
+  --paper: #fafaf9; --line: #e7e5e4; }
+
+.demo-bar { display: flex; flex-wrap: wrap; gap: 4px 18px; justify-content: center; align-items: center; min-height: 38px;
+  box-sizing: border-box; padding: 6px 12px; background: var(--teal); color: var(--teal-soft);
+  font: 400 13px/1.4 "JetBrains Mono", ui-monospace, monospace; }
+.demo-bar a { color: #fff; text-decoration: none; font-weight: 700; }
 .demo-bar a:hover { text-decoration: underline; }
 
-body.gallery { margin: 0; background: #fff; color: #222; font: 15px/1.5 system-ui, sans-serif; }
-.gallery header { padding: 20px 16px 12px; border-bottom: 1px solid #bbb; background: #f4f4f4; text-align: center; }
-.gallery h1 { margin: 0 0 4px; font: 700 24px/1.2 ui-monospace, "JetBrains Mono", monospace; }
-.gallery header p { margin: 0 auto; max-width: 42em; color: #555; }
-.gallery header nav { margin-top: 10px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-.gallery a { color: #1a4fa0; text-decoration: none; }
-.gallery a:hover { text-decoration: underline; }
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; max-width: 1100px;
-  margin: 20px auto; padding: 0 16px; }
-.card { display: block; border: 1px solid #aaa; background: #fff; color: inherit; box-shadow: 2px 2px 0 #ddd; }
-.card:hover { border-color: #1a4fa0; text-decoration: none; box-shadow: 2px 2px 0 #1a4fa0; }
-.card .shot { position: relative; aspect-ratio: 16 / 9; background: #e8eef7 center / cover no-repeat; overflow: hidden; }
-.card .shot img { position: absolute; inset: 12% 10%; width: 80%; height: 76%; object-fit: contain; background: #fff;
-  border: 1px solid #888; box-shadow: 0 2px 6px rgba(0, 0, 0, .25); }
-.card .text { padding: 8px 12px 12px; }
-.card h2 { margin: 0 0 2px; font-size: 16px; }
-.card p { margin: 0; color: #555; font-size: 13px; }
-.empty { text-align: center; color: #777; padding: 40px 16px; }
-.card .badge { position: absolute; left: 8px; bottom: 8px; padding: 2px 8px; background: #1a4fa0; color: #fff; font-size: 12px; }
+body.gallery { margin: 0; background: var(--paper); color: var(--ink); font: 400 14px/1.6 "JetBrains Mono", ui-monospace, monospace;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 30px 30px; }
+.gallery header { padding: 28px 16px 18px; background: var(--teal); color: #fff; text-align: center; border-bottom: 3px double var(--teal-dark); }
+.gallery h1 { margin: 0 0 6px; font: 700 26px/1.2 "JetBrains Mono", ui-monospace, monospace; letter-spacing: .02em; }
+.gallery header p { margin: 0 auto; max-width: 44em; color: var(--teal-soft); }
+.gallery header nav { margin-top: 12px; display: flex; gap: 8px 20px; justify-content: center; flex-wrap: wrap; }
+.gallery header a { color: #fff; font-weight: 700; text-decoration: none; }
+.gallery header a:hover { text-decoration: underline; }
+.gallery a { color: var(--teal-dark); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; max-width: 1180px;
+  margin: 28px auto; padding: 0 18px; }
+.card { display: block; border: 1px solid var(--ink); background: #fff; color: inherit; text-decoration: none; box-shadow: 4px 4px 0 rgba(17, 24, 39, .18);
+  transition: transform .12s, box-shadow .12s; }
+.card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--teal); text-decoration: none; }
+.card .shot { position: relative; aspect-ratio: 16 / 9; background: var(--teal-soft) center / cover no-repeat; overflow: hidden; border-bottom: 1px solid var(--ink); }
+.card .shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card .text { padding: 10px 14px 14px; }
+.card h2 { margin: 0 0 4px; font: 700 15px/1.35 "JetBrains Mono", ui-monospace, monospace; color: var(--ink); }
+.card h2::before { content: "[ "; color: var(--teal); }
+.card h2::after { content: " ]"; color: var(--teal); }
+.card p { margin: 0; color: var(--muted); font-size: 12.5px; }
+.empty { text-align: center; color: var(--muted); padding: 56px 16px; max-width: 40em; margin: 0 auto; }
+.card .badge { position: absolute; left: 10px; bottom: 10px; padding: 3px 10px; background: var(--teal); color: #fff; font-size: 12px; font-weight: 700; }

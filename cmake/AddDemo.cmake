@@ -12,6 +12,7 @@ function(add_demo name)
     target_compile_features(${name} PRIVATE cxx_std_20)
     target_compile_options(${name} PRIVATE -Wall -Wextra -Wpedantic)
     target_link_libraries(${name} PRIVATE SDL3::SDL3)
+    target_include_directories(${name} PRIVATE ${PROJECT_SOURCE_DIR}/common)
 
     if(EMSCRIPTEN)
         set(out "${PROJECT_SOURCE_DIR}/build/web/${name}")
