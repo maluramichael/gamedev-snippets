@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Juice: Hit-Stop und Screen Shake",
+    "en": "Juice: Hit Stop and Screen Shake"
+  },
+  "hint": {
+    "de": "Klick oder Leertaste schlägt zu, Rechtsklick oder Enter schlägt hart. Schalte die sieben Reaktionen einzeln ein und aus.",
+    "en": "Click or Space hits, right click or Enter hits hard. Switch the seven reactions on and off one by one."
+  },
+  "post": {
+    "de": "juice-hit-stop-und-screen-shake",
+    "en": "juice-hit-stop-and-screen-shake"
+  },
+  "repo": "juice",
+  "category": "gameplay",
+  "publishAt": "2027-05-07T08:00:00+02:00"
+}
