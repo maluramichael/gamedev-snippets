@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Würfel und Schaden",
+    "en": "Dice and Damage Rolls"
+  },
+  "hint": {
+    "de": "Tausende Würfe, live als Histogramm. Anzahl und Art der Würfel, Bonus und Zielwert verstellen, auf einen Balken klicken setzt das Ziel. Dazu die Fehlversuche: ein flacher Wurf über denselben Bereich und Modulo mit einer 8-Bit-Quelle. Im Tabellenmodus bestimmen Klicks auf die Balken die Gewichte.",
+    "en": "Thousands of rolls as a live histogram. Change the number and kind of dice, the bonus and the target, click a bar to set the target. Next to it the wrong ways: one flat roll over the same range and modulo on an 8 bit source. In table mode, clicks on the bars set the weights."
+  },
+  "post": {
+    "de": "wuerfel-und-schaden",
+    "en": "dice-and-damage-rolls"
+  },
+  "repo": "damage-dice",
+  "category": "gameplay",
+  "publishAt": "2027-04-30T08:00:00+02:00"
+}
