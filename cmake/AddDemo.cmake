@@ -22,9 +22,15 @@ function(add_demo name)
         target_link_options(${name} PRIVATE
             "--shell-file=${PROJECT_SOURCE_DIR}/cmake/shell.html"
             -sALLOW_MEMORY_GROWTH=1)
+        set(extras "")
+        foreach(extra thumb.png cover.webp)
+            if(EXISTS "${PROJECT_SOURCE_DIR}/${name}/${extra}")
+                list(APPEND extras "${PROJECT_SOURCE_DIR}/${name}/${extra}")
+            endif()
+        endforeach()
         add_custom_command(TARGET ${name} POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy_if_different
-                "${PROJECT_SOURCE_DIR}/${name}/demo.json" "${out}/demo.json")
+                "${PROJECT_SOURCE_DIR}/${name}/demo.json" ${extras} "${out}/")
     else()
         add_test(NAME ${name} COMMAND ${name} --frames 120)
         set_tests_properties(${name} PROPERTIES ENVIRONMENT "SDL_VIDEODRIVER=dummy")

@@ -14,6 +14,11 @@ function(add_python_demo name)
         set(out "${PROJECT_SOURCE_DIR}/build/web/${name}")
         file(GLOB py_files CONFIGURE_DEPENDS "${src}/*.py")
         list(FILTER py_files EXCLUDE REGEX "/test_[^/]*\\.py$")
+        foreach(extra thumb.png cover.webp)
+            if(EXISTS "${src}/${extra}")
+                list(APPEND py_files "${src}/${extra}")
+            endif()
+        endforeach()
         add_custom_target(${name} ALL
             COMMAND ${CMAKE_COMMAND} -E make_directory "${out}"
             COMMAND ${CMAKE_COMMAND} -E copy_if_different ${py_files} "${src}/index.html" "${src}/demo.json" "${out}")
