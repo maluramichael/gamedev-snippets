@@ -19,5 +19,7 @@ FetchContent_MakeAvailable(SDL3)
 
 enable_testing()
 include(cmake/AddDemo.cmake)
+include(cmake/AddPythonDemo.cmake)
 
 add_demo(update-loop SOURCES update-loop/main.cpp)
+add_python_demo(update-loop-py)

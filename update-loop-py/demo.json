@@ -1,0 +1,7 @@
+{
+  "title": { "de": "Update Loop mit festem Zeitschritt (Python)", "en": "Update loop with a fixed timestep (Python)" },
+  "hint": { "de": "Dieselbe Idee in Python mit pygame-ce, direkt im Browser über Pyodide.", "en": "The same idea in Python with pygame-ce, running in the browser through Pyodide." },
+  "post": { "de": "update-loop", "en": "update-loop" },
+  "repo": "update-loop-py",
+  "publishAt": "2026-11-13T08:00:00+01:00"
+}

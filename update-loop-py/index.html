@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>update-loop (Python)</title>
+<style>
+  html, body { margin: 0; background: #fff; font: 14px/1.4 sans-serif; color: #333; }
+  canvas { display: block; margin: 0 auto; max-width: 100%; }
+  #status { text-align: center; padding: 8px; }
+</style>
+</head>
+<body>
+<canvas id="canvas" width="640" height="360"></canvas>
+<p id="status">Loading Python ...</p>
+<noscript>This demo needs JavaScript and WebAssembly.</noscript>
+<script type="module">
+  const status = document.getElementById("status");
+  try {
+    const { loadPyodide } = await import("/_shared/pyodide/pyodide.mjs");
+    const pyodide = await loadPyodide({ indexURL: "/_shared/pyodide/" });
+    status.textContent = "Loading pygame-ce ...";
+    await pyodide.loadPackage("pygame-ce");
+    for (const name of ["stepper.py", "main.py"]) {
+      const response = await fetch(name);
+      pyodide.FS.writeFile(name, await response.text());
+    }
+    pyodide.canvas.setCanvas2D(document.getElementById("canvas"));
+    status.textContent = "";
+    await pyodide.runPythonAsync("import main\nawait main.main()");
+  } catch (error) {
+    status.textContent = "The demo could not start: " + error.message;
+  }
+</script>
+</body>
+</html>
