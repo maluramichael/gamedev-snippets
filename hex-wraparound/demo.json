@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Hex-Karte ohne Rand",
+    "en": "Hex Map without Edges"
+  },
+  "hint": {
+    "de": "Die Figur läuft von allein und kommt am Rand auf der anderen Seite wieder heraus. Plane zeigt die Karte mit ihren sechs Kopien und den Spiegelzentren m0 bis m5, Fringe nur einen Rand aus Kopien mit den Koordinaten. Mit der Maus über ein Feld fahren leuchtet es in jeder Kopie auf, ein Klick setzt die Figur dorthin. Naive springt stattdessen auf das gegenüberliegende Feld und bleibt in ihrer Zeile hängen. Chips und Tasten 1 bis 3 (Radius), 4 5 (Ansicht), 6 7 (Regel), Leertaste (Laufen), R (zurück), Q E A D Z C (ein Schritt).",
+    "en": "The figure walks on its own and comes out on the other side at the edge. Plane shows the map with its six copies and the mirror centers m0 to m5, Fringe only a border of copies with the coordinates. Hover a tile and it lights up in every copy, a click puts the figure there. Naive jumps to the opposite tile instead and never leaves its row. Chips and keys 1 to 3 (radius), 4 5 (view), 6 7 (rule), Space (walk), R (reset), Q E A D Z C (one step)."
+  },
+  "post": {
+    "de": "hex-karte-ohne-rand",
+    "en": "hex-map-without-edges"
+  },
+  "repo": "hex-wraparound",
+  "category": "grid",
+  "publishAt": "2027-03-12T08:00:00+01:00"
+}
