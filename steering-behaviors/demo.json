@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Steering Behaviors",
+    "en": "Steering Behaviors"
+  },
+  "hint": {
+    "de": "Ein Agent folgt der Maus: Seek, Flee, Arrive, Wander oder Pfad (Chips 1 bis 5, Klick setzt das Ziel). Pfeile zeigen Geschwindigkeit, Wunsch und Steuerung. Mit D wechselst du die Skalierung mit dt, mit F das Kraftlimit.",
+    "en": "An agent follows the mouse: seek, flee, arrive, wander or path (chips 1 to 5, a click sets the target). Arrows show velocity, wish and steering. D switches the dt scaling, F the force limit."
+  },
+  "post": {
+    "de": "steering-behaviors",
+    "en": "steering-behaviors"
+  },
+  "repo": "steering-behaviors",
+  "category": "ai",
+  "publishAt": "2027-01-01T08:00:00+01:00"
+}
