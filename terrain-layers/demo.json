@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Rauschschichten mischen",
+    "en": "Blending Noise Layers"
+  },
+  "hint": {
+    "de": "Vier Mischmodi für drei Rauschschichten. Ein Klick auf eine Karte schaltet die Schicht aus, die Regler setzen Maskenschwelle und Weichheit, Ziehen verschiebt den Ausschnitt, N würfelt eine neue Karte, O zeigt die Maske.",
+    "en": "Four blend modes for three noise layers. Click a card to switch a layer off, the sliders set mask threshold and softness, dragging pans the map, N rolls a new map, O shows the mask."
+  },
+  "post": {
+    "de": "rauschschichten-mischen",
+    "en": "blending-noise-layers"
+  },
+  "repo": "terrain-layers",
+  "category": "terrain",
+  "publishAt": "2026-11-27T08:00:00+01:00"
+}
