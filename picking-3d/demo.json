@@ -1,0 +1,7 @@
+{
+  "title": { "de": "Picking im 3D-Raum", "en": "Picking in 3D space" },
+  "hint": { "de": "Maus über die Objekte bewegen, klicken wählt aus. Ziehen dreht die Kamera, das Mausrad zoomt, rechts siehst du den Strahl von oben.", "en": "Move the mouse over the objects and click to select. Drag to orbit the camera, wheel to zoom, the ray is drawn from above on the right." },
+  "post": { "de": "picking-im-3d-raum", "en": "picking-in-3d-space" },
+  "repo": "picking-3d",
+  "publishAt": "2026-12-11T08:00:00+01:00"
+}
