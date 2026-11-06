@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Autotiling",
+    "en": "Autotiling"
+  },
+  "hint": {
+    "de": "Mit der Maus Wände oder Gras malen (Rechtsklick löscht). Oben die vier Modi umschalten, rechts im Atlas leuchten die benutzten Tiles.",
+    "en": "Paint walls or grass with the mouse (right drag erases). Switch the four modes at the bottom, the atlas on the right lights up the tiles in use."
+  },
+  "post": {
+    "de": "autotiling",
+    "en": "autotiling"
+  },
+  "repo": "autotiling",
+  "category": "grid",
+  "publishAt": "2027-03-26T08:00:00+01:00"
+}
