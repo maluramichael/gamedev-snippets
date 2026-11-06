@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Licht mit Normal Maps",
+    "en": "Lighting with Normal Maps"
+  },
+  "hint": {
+    "de": "Die Maus ist das Licht, Mausrad oder Regler ändern die Lichthöhe. Unten schaltest du Normal Map, Diffuse und Specular um, drehst den Grünkanal um und lässt das Renormalisieren weg, rechts wählst du die Größe der Normal Map.",
+    "en": "The mouse is the light, the wheel or the slider changes its height. The buttons switch the normal map and the diffuse and specular terms, flip the green channel and skip the renormalizing; on the right you pick the size of the normal map."
+  },
+  "post": {
+    "de": "licht-mit-normal-maps",
+    "en": "lighting-with-normal-maps"
+  },
+  "repo": "normal-map-lighting",
+  "category": "graphics",
+  "publishAt": "2027-06-04T08:00:00+02:00"
+}
