@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Idle-Wirtschaft",
+    "en": "Idle Game Economy"
+  },
+  "hint": {
+    "de": "Der Autokäufer spart auf das nächste Gebäude. Zeit beschleunigen, Wachstum und Kostenformel umschalten, Gebäude anklicken, mit Prestige neu starten und die Kurven über der logarithmischen Zeitachse vergleichen.",
+    "en": "The auto buyer saves for the next building. Speed up time, switch the cost formula and growth, click a building, restart with Prestige and compare the curves over a logarithmic time axis."
+  },
+  "post": {
+    "de": "idle-wirtschaft",
+    "en": "idle-game-economy"
+  },
+  "repo": "idle-economy",
+  "category": "gameplay",
+  "publishAt": "2027-05-28T08:00:00+02:00"
+}
