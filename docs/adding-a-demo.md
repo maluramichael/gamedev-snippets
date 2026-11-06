@@ -78,3 +78,8 @@ uv run python -m http.server <free port> -d build/web-<name>    # then http://lo
 Look at it with `playwright-cli -s=<name> ...` (screenshot the canvas: `screenshot canvas --filename <file>`; clicks with
 `run-code "async page => { await page.mouse.click(x, y); }"`), then read the screenshot. Check the browser console for errors.
 Save the thumb as `<name>/thumb.png`.
+
+## Root README gallery
+
+The table in the root `README.md` (two columns, thumbnail, title, category, live and code links) is generated, do not edit it by hand.
+After committing a new demo (with its `thumb.png`) run `node scripts/readme-gallery.mjs` and commit `README.md`.
