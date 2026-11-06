@@ -9,7 +9,7 @@
   },
   "post": {
     "de": "n-koerper-schwerkraft",
-    "en": "n-body-gravity"
+    "en": "gravity-between-many-bodies"
   },
   "repo": "n-body-gravity",
   "category": "space",

@@ -9,7 +9,7 @@
   },
   "post": {
     "de": "n-gramme-spieler-vorhersagen",
-    "en": "predicting-the-player"
+    "en": "predicting-the-player-n-grams"
   },
   "repo": "ngram-predictor",
   "category": "ai",

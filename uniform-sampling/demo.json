@@ -9,7 +9,7 @@
   },
   "post": {
     "de": "gleichverteilt-im-kreis",
-    "en": "uniform-sampling-in-a-disc"
+    "en": "uniform-sampling-in-a-disc-and-a-triangle"
   },
   "repo": "uniform-sampling",
   "category": "gameplay",

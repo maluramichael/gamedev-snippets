@@ -9,7 +9,7 @@
   },
   "post": {
     "de": "dreiecke-fuellen",
-    "en": "filling-triangles"
+    "en": "filling-triangles-without-seams"
   },
   "repo": "triangle-rasterizer",
   "category": "graphics",

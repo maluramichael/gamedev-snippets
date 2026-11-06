@@ -9,7 +9,7 @@
   },
   "post": {
     "de": "umlaufbahnen",
-    "en": "orbits"
+    "en": "orbits-kepler-instead-of-flying-straight"
   },
   "repo": "orbit-mechanics",
   "category": "space",
