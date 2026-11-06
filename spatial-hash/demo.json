@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Spatial Hash",
+    "en": "Spatial Hashing"
+  },
+  "hint": {
+    "de": "Brute Force, Hash-Grid und Quadtree umschalten, die Zellgröße am Regler ziehen und mit der Maus eine Zelle abfahren. Die Zahl der Paartests zählt.",
+    "en": "Switch between brute force, hash grid and quadtree, drag the cell size slider and sweep the mouse over a cell. The pair-test count is what matters."
+  },
+  "post": {
+    "de": "spatial-hash",
+    "en": "spatial-hashing"
+  },
+  "repo": "spatial-hash",
+  "category": "physics",
+  "publishAt": "2027-01-29T08:00:00+01:00"
+}
