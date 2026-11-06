@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Domain Warping",
+    "en": "Domain Warping"
+  },
+  "hint": {
+    "de": "Links die Karte ohne, rechts mit Verzerrung, die Trennlinie lässt sich ziehen. Strength-Regler ziehen oder Pfeiltasten, Chips wählen Stufen (0, 1 oder 2), Pfeile zeigen die Verschiebung. Mit der Maus über der Karte sieht man, von wo ein Pixel seine Höhe liest.",
+    "en": "Plain map on the left, warped on the right, drag the divider. Drag the strength slider or use the arrow keys, the chips pick the stages (0, 1 or 2), arrows show the offset. Hover the map to see where a pixel reads its height from."
+  },
+  "post": {
+    "de": "domain-warping",
+    "en": "domain-warping"
+  },
+  "repo": "terrain-warp",
+  "category": "terrain",
+  "publishAt": "2027-02-05T08:00:00+01:00"
+}
