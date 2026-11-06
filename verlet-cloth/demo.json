@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Stoff und Seile mit Verlet",
+    "en": "Cloth and Ropes with Verlet"
+  },
+  "hint": {
+    "de": "Punkte ziehen, festpinnen oder Fäden durchschneiden. Der Regler Iterations macht aus Gummi Stoff, Wind weht, und \"Stored velocity\" zeigt, was ohne Verlet schiefgeht.",
+    "en": "Grab points, pin them or cut threads. The Iterations slider turns rubber into cloth, Wind blows, and \"Stored velocity\" shows what goes wrong without Verlet."
+  },
+  "post": {
+    "de": "stoff-und-seile-mit-verlet",
+    "en": "cloth-and-ropes-with-verlet"
+  },
+  "repo": "verlet-cloth",
+  "category": "physics",
+  "publishAt": "2027-04-02T08:00:00+02:00"
+}
