@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Dithering mit Bayer-Matrix",
+    "en": "Dithering with a Bayer Matrix"
+  },
+  "hint": {
+    "de": "Mit der Maus über das Bild fahren: links das Original, rechts die Palette. Matrix, Palette und Farbraum per Chip wechseln.",
+    "en": "Move the mouse over the image: original on the left, palette on the right. Switch matrix, palette and color space with the chips."
+  },
+  "post": {
+    "de": "dithering-mit-bayer-matrix",
+    "en": "dithering-with-a-bayer-matrix"
+  },
+  "repo": "ordered-dithering",
+  "category": "graphics",
+  "publishAt": "2027-06-18T08:00:00+02:00"
+}
