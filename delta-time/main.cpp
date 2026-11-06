@@ -21,6 +21,7 @@ constexpr float kSize = 40.0F;
 constexpr float kSpeed = 240.0F;                  // pixels per second
 constexpr float kPixelsPerFrame = kSpeed / 60.0F; // same speed, but only at exactly 60 frames per second
 constexpr double kMaxDelta = 0.25;                // clamp after a stall (tab switch, breakpoint)
+constexpr double kSlack = 0.002;                  // display refresh jitter: a frame 2 ms early still counts as due
 constexpr std::array<int, 4> kRates{15, 30, 60, 144};
 
 struct Runner {
@@ -39,14 +40,13 @@ struct Runner {
 struct App {
     SDL_Window* window = nullptr;
     SDL_Renderer* renderer = nullptr;
-    Uint64 last = 0;
-    double sinceFrame = 0.0;
+    Uint64 lastFrame = 0;
+    Uint64 lastSecond = 0;
     int rateIndex = 2;
     Runner perFrame;
     Runner perSecond;
     long maxFrames = -1;
     long frames = 0;
-    double secondTimer = 0.0;
     int framesThisSecond = 0;
     int fps = 0;
 };
@@ -74,7 +74,8 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char** argv) {
         return SDL_APP_FAILURE;
     }
     SDL_SetRenderVSync(app->renderer, 1);
-    app->last = SDL_GetPerformanceCounter();
+    app->lastFrame = SDL_GetPerformanceCounter();
+    app->lastSecond = app->lastFrame;
     return SDL_APP_CONTINUE;
 }
 
@@ -96,15 +97,13 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
     auto& app = *static_cast<App*>(appstate);
 
     const Uint64 now = SDL_GetPerformanceCounter();
-    const double elapsed = static_cast<double>(now - app.last) / static_cast<double>(SDL_GetPerformanceFrequency());
-    app.last = now;
-    app.sinceFrame += elapsed;
-    app.secondTimer += elapsed;
+    const auto frequency = static_cast<double>(SDL_GetPerformanceFrequency());
+    const double sinceFrame = static_cast<double>(now - app.lastFrame) / frequency;
 
     const double interval = 1.0 / kRates[static_cast<std::size_t>(app.rateIndex)];
-    if (app.sinceFrame >= interval) {
-        const double delta = std::min(app.sinceFrame, kMaxDelta);
-        app.sinceFrame = 0.0;
+    if (sinceFrame + kSlack >= interval) {
+        const double delta = std::min(sinceFrame, kMaxDelta);
+        app.lastFrame = now;
 
         app.perFrame.move(kPixelsPerFrame);
         app.perSecond.move(kSpeed * static_cast<float>(delta));
@@ -133,10 +132,10 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
         ++app.frames;
     }
 
-    if (app.secondTimer >= 1.0) {
+    if (static_cast<double>(now - app.lastSecond) / frequency >= 1.0) {
         app.fps = app.framesThisSecond;
         app.framesThisSecond = 0;
-        app.secondTimer -= 1.0;
+        app.lastSecond = now;
     }
     return (app.maxFrames >= 0 && app.frames >= app.maxFrames) ? SDL_APP_SUCCESS : SDL_APP_CONTINUE;
 }
