@@ -370,12 +370,15 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             }
             break;
         case SDL_EVENT_MOUSE_BUTTON_UP:
+        case SDL_EVENT_WINDOW_MOUSE_LEAVE:
+        case SDL_EVENT_WINDOW_FOCUS_LOST:
             app.dragging = false;
             break;
         case SDL_EVENT_MOUSE_WHEEL:
             app.cam.zoom(std::clamp(event->wheel.y, -3.0F, 3.0F));
             break;
         case SDL_EVENT_KEY_DOWN:
+            if (event->key.repeat) break;
             if (event->key.key >= SDLK_1 && event->key.key <= SDLK_3) app.wind = static_cast<std::size_t>(event->key.key - SDLK_1);
             if (event->key.key == SDLK_W) app.wireframe = !app.wireframe;
             if (event->key.key == SDLK_F) app.foam = !app.foam;
@@ -516,15 +519,18 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
 void SDL_AppQuit(void* appstate, SDL_AppResult) {
     auto* app = static_cast<App*>(appstate);
     if (app != nullptr) {
-        app->hud.destroy();
-        glDeleteProgram(app->skyProgram);
-        glDeleteProgram(app->waterProgram);
-        glDeleteProgram(app->buoyProgram);
-        const GLuint buffers[] = {app->gridVbo, app->gridIbo, app->lineIbo, app->buoyVbo, app->buoyIbo};
-        glDeleteBuffers(5, buffers);
-        glDeleteVertexArrays(1, &app->gridVao);
-        glDeleteVertexArrays(1, &app->lineVao);
-        glDeleteVertexArrays(1, &app->buoyVao);
+        // SDL_AppQuit also runs after a failed SDL_AppInit: GL objects exist only if the context does.
+        if (app->win.context != nullptr) {
+            app->hud.destroy();
+            glDeleteProgram(app->skyProgram);
+            glDeleteProgram(app->waterProgram);
+            glDeleteProgram(app->buoyProgram);
+            const GLuint buffers[] = {app->gridVbo, app->gridIbo, app->lineIbo, app->buoyVbo, app->buoyIbo};
+            glDeleteBuffers(5, buffers);
+            glDeleteVertexArrays(1, &app->gridVao);
+            glDeleteVertexArrays(1, &app->lineVao);
+            glDeleteVertexArrays(1, &app->buoyVao);
+        }
         app->win.destroy();
         delete app;
     }

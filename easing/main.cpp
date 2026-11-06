@@ -104,7 +104,7 @@ struct App {
     ease::Tween<ease::Rgb> tint{kTealRgb, kOrangeRgb, kTintSeconds, ease::quadInOut};
     double chainTime = 0.0;
     double chainIdle = 0.0;
-    double stepAccumulator = 0.0;
+    ease::ChunkClock stepClock;
     double lastStep = 0.0;
     Step step = Step::Real;
 };
@@ -310,6 +310,12 @@ void restartChain(App& app) {
     app.tint.restart();
     app.chainTime = 0.0;
     app.chainIdle = 0.0;
+    app.stepClock.reset();
+}
+
+void setStep(App& app, Step step) {
+    app.step = step;
+    app.stepClock.reset();  // the rest collected for the old chunk size must not leak into the new one
 }
 
 void select(App& app, int index) {
@@ -349,9 +355,9 @@ void apply(App& app, Action action) {
         case Action::Once: setMode(app, ease::Mode::Once); break;
         case Action::Play: restartDetail(app); break;
         case Action::Restart: restartChain(app); break;
-        case Action::StepReal: app.step = Step::Real; break;
-        case Action::StepFps20: app.step = Step::Fps20; break;
-        case Action::StepFps5: app.step = Step::Fps5; break;
+        case Action::StepReal: setStep(app, Step::Real); break;
+        case Action::StepFps20: setStep(app, Step::Fps20); break;
+        case Action::StepFps5: setStep(app, Step::Fps5); break;
     }
 }
 
@@ -390,11 +396,7 @@ void update(App& app, double dt) {
     }
     // A fixed, low frame rate: the chain is stepped in big, equal chunks. It must end up in the same places.
     const double chunk = app.step == Step::Fps20 ? 1.0 / 20.0 : 1.0 / 5.0;
-    app.stepAccumulator += dt;
-    while (app.stepAccumulator >= chunk) {
-        app.stepAccumulator -= chunk;
-        chainStep(app, chunk);
-    }
+    for (int n = app.stepClock.advance(dt, chunk); n > 0; --n) chainStep(app, chunk);
 }
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -741,6 +743,9 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             break;
         }
         case SDL_EVENT_KEY_DOWN:
+            // Tab, 1-3, Space, R, L and D toggle or trigger and must not fire while held. The arrow keys step through
+            // the gallery and may repeat.
+            if (event->key.repeat && event->key.key != SDLK_LEFT && event->key.key != SDLK_RIGHT && event->key.key != SDLK_UP && event->key.key != SDLK_DOWN) break;
             switch (event->key.key) {
                 case SDLK_ESCAPE: return SDL_APP_SUCCESS;
                 case SDLK_TAB: apply(app, app.view == View::Easing ? Action::ViewChain : Action::ViewEasing); break;

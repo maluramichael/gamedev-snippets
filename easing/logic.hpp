@@ -321,4 +321,24 @@ bool allFinished(const Tween<Ts>&... tweens) {
     return (tweens.finished() && ...);
 }
 
+/// Cuts incoming time into equal chunks, the way a fixed low frame rate would see it. advance() returns how many full
+/// chunks fit; the rest stays in the accumulator. That rest belongs to the run it was collected in, so reset() it when
+/// the run restarts or the chunk size changes, or the first chunk of the new run comes up to one chunk too early.
+struct ChunkClock {
+    double accumulator = 0.0;
+
+    int advance(double dt, double chunk) {
+        if (!(chunk > 0.0)) return 0;  // a chunk of 0 would never drain
+        if (dt > 0.0) accumulator += dt;
+        int n = 0;
+        while (accumulator >= chunk) {
+            accumulator -= chunk;
+            ++n;
+        }
+        return n;
+    }
+
+    void reset() { accumulator = 0.0; }
+};
+
 }  // namespace ease

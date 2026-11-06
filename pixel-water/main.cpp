@@ -21,6 +21,10 @@
 #include <utility>
 #include <vector>
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 #include "hud.hpp"
 #include "logic.hpp"
 
@@ -228,6 +232,14 @@ void uploadWorld(App& app) {
     app.dirty = false;
 }
 
+// SDL's performance counter only ticks in whole milliseconds in the browser build, far too coarse for a step that takes
+// a few hundred microseconds. The browser clock itself has finer steps.
+#ifdef __EMSCRIPTEN__
+double nowMicros() { return emscripten_get_now() * 1000.0; }
+#else
+double nowMicros() { return static_cast<double>(SDL_GetPerformanceCounter()) * 1e6 / static_cast<double>(SDL_GetPerformanceFrequency()); }
+#endif
+
 /// One 60 Hz tick: paint with the held brush, then (unless paused) tap and step.
 void tick(App& app) {
     if (app.mouseDown && inWorld(app.mouseCell)) {
@@ -244,9 +256,9 @@ void tick(App& app) {
         return;
     }
     if (app.tap) pw::pourTap(app.world, pw::kTapX, pw::kTapY, 2, kWaterCap);
-    const Uint64 t0 = SDL_GetPerformanceCounter();
+    const double t0 = nowMicros();
     app.world.step();
-    const double us = static_cast<double>(SDL_GetPerformanceCounter() - t0) * 1e6 / static_cast<double>(SDL_GetPerformanceFrequency());
+    const double us = nowMicros() - t0;
     app.stepMicros = app.stepMicros == 0.0 ? us : app.stepMicros * 0.9 + us * 0.1;
     app.counts = app.world.counts();
     app.dirty = true;
@@ -367,7 +379,9 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             if (event->button.button == SDL_BUTTON_LEFT) app.mouseDown = false;
             break;
         case SDL_EVENT_WINDOW_MOUSE_LEAVE:
+        case SDL_EVENT_WINDOW_FOCUS_LOST:
             app.mouseDown = false;
+            app.strokeFrom.reset();
             app.mouseCell = {-1, -1};
             break;
         case SDL_EVENT_MOUSE_WHEEL:
@@ -375,6 +389,7 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             if (event->wheel.y < 0) app.brush = std::max(app.brush - 1, 0);
             break;
         case SDL_EVENT_KEY_DOWN:
+            if (event->key.repeat) break;  // every key here toggles or triggers, none should fire while held
             switch (event->key.key) {
                 case SDLK_ESCAPE: return SDL_APP_SUCCESS;
                 case SDLK_1: apply(app, Action::Water); break;

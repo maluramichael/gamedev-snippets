@@ -88,6 +88,20 @@ inline float scene(Vec3 p, float t, float k) {
     return std::fmin(sdPlane(p), smin(smin(s.sphere, s.box, k), s.torus, k));
 }
 
+// ---- animation time ----
+
+/// Every time term in the scene (sin/cos of 0.4 ... 1.3 * t, the rotation angles 0.6 * t) has a frequency that is a
+/// multiple of 0.1, so the whole scene repeats after 20 pi seconds. The shader only gets the time modulo this period:
+/// as a raw float the time would only have millisecond resolution after a few hours and the motion would stutter.
+inline constexpr double kTimePeriod = 62.83185307179586;  // 20 pi
+
+/// `t` reduced to [0, kTimePeriod), computed in double. Negative times wrap around too.
+inline double wrapTime(double t) {
+    double w = std::fmod(t, kTimePeriod);
+    if (w < 0.0) w += kTimePeriod;
+    return w < kTimePeriod ? w : 0.0;  // -1e-20 + period rounds up to the period itself; NaN ends up here as well
+}
+
 // ---- sphere tracing ----
 
 struct Hit {

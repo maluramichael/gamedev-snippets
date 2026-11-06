@@ -462,12 +462,17 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
         case SDL_EVENT_QUIT:
             return SDL_APP_SUCCESS;
         case SDL_EVENT_KEY_DOWN:
+            if (event->key.repeat) break;  // R toggles, C resets: neither is meant to repeat while held
             if (event->key.key == SDLK_ESCAPE) return SDL_APP_SUCCESS;
             if (event->key.key == SDLK_R) app.showRay = !app.showRay;
             if (event->key.key == SDLK_C) resetCamera(app);
             break;
         case SDL_EVENT_WINDOW_MOUSE_LEAVE:
             app.hasMouse = false;
+            app.leftDown = app.rightDown = app.dragging = false;  // a release outside the canvas never arrives as BUTTON_UP
+            break;
+        case SDL_EVENT_WINDOW_FOCUS_LOST:
+            app.leftDown = app.rightDown = app.dragging = false;
             break;
         case SDL_EVENT_MOUSE_MOTION: {
             app.hasMouse = true;

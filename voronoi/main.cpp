@@ -509,6 +509,7 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             }
             break;
         case SDL_EVENT_WINDOW_MOUSE_LEAVE:
+        case SDL_EVENT_WINDOW_FOCUS_LOST:
             app.held = -1;
             app.panning = false;
             break;
@@ -523,6 +524,7 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             break;
         }
         case SDL_EVENT_KEY_DOWN:
+            if (event->key.repeat) break;
             switch (event->key.key) {
                 case SDLK_ESCAPE: return SDL_APP_SUCCESS;
                 case SDLK_R: reshuffle(app, static_cast<int>(app.bodies.size())); break;
@@ -630,9 +632,12 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
 void SDL_AppQuit(void* appstate, SDL_AppResult) {
     auto* app = static_cast<App*>(appstate);
     if (app != nullptr) {
-        app->hud.destroy();
-        glDeleteProgram(app->sitesProgram.id);
-        glDeleteProgram(app->worleyProgram.id);
+        // SDL_AppQuit also runs after a failed SDL_AppInit: GL objects exist only if the context does.
+        if (app->win.context != nullptr) {
+            app->hud.destroy();
+            glDeleteProgram(app->sitesProgram.id);
+            glDeleteProgram(app->worleyProgram.id);
+        }
         app->win.destroy();
         delete app;
     }

@@ -319,8 +319,10 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
         case SDL_EVENT_MOUSE_BUTTON_UP:
             if (event->button.button == SDL_BUTTON_LEFT) app.dragging.reset();
             break;
-        case SDL_EVENT_WINDOW_MOUSE_LEAVE: app.dragging.reset(); break;
+        case SDL_EVENT_WINDOW_MOUSE_LEAVE:
+        case SDL_EVENT_WINDOW_FOCUS_LOST: app.dragging.reset(); break;
         case SDL_EVENT_KEY_DOWN:
+            if (event->key.repeat) break;  // every key here toggles, triggers or deletes, none should fire while held
             switch (event->key.key) {
                 case SDLK_ESCAPE: return SDL_APP_SUCCESS;
                 case SDLK_1: apply(app, Action::RuleEvenOdd); break;

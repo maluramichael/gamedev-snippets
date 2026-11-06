@@ -627,10 +627,12 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
             if (event->button.button == SDL_BUTTON_LEFT) app.drag = Drag::None;
             break;
         case SDL_EVENT_WINDOW_MOUSE_LEAVE:
+        case SDL_EVENT_WINDOW_FOCUS_LOST:
             app.drag = Drag::None;
             app.mouse = {-100.0F, -100.0F};
             break;
         case SDL_EVENT_KEY_DOWN:
+            if (event->key.repeat) break;  // every key here toggles or triggers, none should fire while held
             switch (event->key.key) {
                 case SDLK_ESCAPE: return SDL_APP_SUCCESS;
                 case SDLK_1: setFamily(app, xpc::Family::Linear); break;

@@ -248,6 +248,35 @@ void heatRamp() {
     CHECK(near(quarter.x, (0.98 + 0.051) / 2.0) && near(quarter.y, (0.98 + 0.580) / 2.0));
 }
 
+void animationTimeWraps() {
+    const double period = kTimePeriod;
+    CHECK(near(period, 20.0 * 3.14159265358979323846, 1e-9));
+    CHECK(near(wrapTime(0.0), 0.0, 1e-12));
+    CHECK(near(wrapTime(5.0), 5.0, 1e-12));                   // below one period: unchanged
+    CHECK(near(wrapTime(period), 0.0, 1e-9));                 // exactly one period: back to the start
+    CHECK(near(wrapTime(period + 3.0), 3.0, 1e-9));
+    CHECK(near(wrapTime(-0.1), period - 0.1, 1e-9));          // negative time lands in [0, period)
+    CHECK(near(wrapTime(-period), 0.0, 1e-9));
+    for (double t : {0.0, 1.0, 62.8, 1000.0, -3.0, 36000.0, 1.0e6, -1.0e6}) {
+        const double w = wrapTime(t);
+        CHECK(w >= 0.0 && w < period);
+    }
+    // Ten hours in: the wrapped value is the same as the small remainder, to double precision.
+    const double tenHours = 36000.0;
+    const double rest = tenHours - std::floor(tenHours / period) * period;
+    CHECK(near(wrapTime(tenHours), rest, 1e-9));
+    CHECK(near(wrapTime(5.0 + 1000.0 * period), 5.0, 1e-6));
+    // Every time term of the shader has a frequency that is a multiple of 0.1, so the scene looks the same one period later.
+    const Vec3 probes[] = {{0.2F, 0.9F, 0.1F}, {-1.0F, 0.5F, 0.3F}, {0.6F, 1.3F, -0.4F}};
+    for (const Vec3 p : probes) {
+        const Shapes a = shapes(p, 5.0F);
+        const Shapes b = shapes(p, static_cast<float>(wrapTime(5.0 + 1000.0 * period)));
+        CHECK(near(a.sphere, b.sphere, 1e-4) && near(a.box, b.box, 1e-4) && near(a.torus, b.torus, 1e-4));
+        const Shapes c = shapes(p, static_cast<float>(period) + 5.0F);  // one period later, in float
+        CHECK(near(a.sphere, c.sphere, 2e-3) && near(a.box, c.box, 2e-3) && near(a.torus, c.torus, 2e-3));
+    }
+}
+
 }  // namespace
 
 int main() {
@@ -268,6 +297,7 @@ int main() {
     sceneIsLipschitz();
     sceneMarch();
     heatRamp();
+    animationTimeWraps();
     if (failures == 0) std::printf("all ray-marching tests passed\n");
     return failures == 0 ? EXIT_SUCCESS : EXIT_FAILURE;
 }

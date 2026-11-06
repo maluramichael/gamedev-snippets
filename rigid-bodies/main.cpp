@@ -333,6 +333,10 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
     if (event->type == SDL_EVENT_MOUSE_BUTTON_UP && event->button.button == SDL_BUTTON_LEFT) {
         app.drag.body = -1;
     }
+    // A release outside the canvas or the window never arrives here, so let go when the pointer or the focus leaves.
+    if (event->type == SDL_EVENT_WINDOW_MOUSE_LEAVE || event->type == SDL_EVENT_WINDOW_FOCUS_LOST) {
+        app.drag.body = -1;
+    }
     if (event->type == SDL_EVENT_KEY_DOWN && !event->key.repeat) {
         if (event->key.key == SDLK_R) {
             apply(app, Chip{{}, "", Act::Clear, 0, false, false});

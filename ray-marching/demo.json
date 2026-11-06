@@ -4,8 +4,8 @@
     "en": "Ray marching"
   },
   "hint": {
-    "de": "Ziehen dreht die Kamera, das Mausrad zoomt. Die Chips schalten Schritt-Heatmap, Schatten, Verschmelzung und Schrittlimit um.",
-    "en": "Drag to orbit, wheel to zoom. The chips switch the step heatmap, shadows, blend strength and step limit."
+    "de": "Ziehen dreht die Kamera, das Mausrad zoomt. Die Chips schalten Schritt-Heatmap, Schatten, Auflösung, Verschmelzung und Schrittlimit um.",
+    "en": "Drag to orbit, wheel to zoom. The chips switch the step heatmap, shadows, render resolution, blend strength and step limit."
   },
   "post": {
     "de": "ray-marching",

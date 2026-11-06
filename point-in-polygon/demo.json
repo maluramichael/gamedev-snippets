@@ -4,8 +4,8 @@
     "en": "Point in polygon"
   },
   "hint": {
-    "de": "Der Mauszeiger ist der Testpunkt. Ecken ziehen, auf eine Kante klicken fügt eine Ecke ein, Rechtsklick löscht.",
-    "en": "The cursor is the test point. Drag corners, click an edge to add one, right click removes."
+    "de": "Der Mauszeiger ist der Testpunkt. Ecken ziehen, auf eine Kante klicken fügt eine Ecke ein, Rechtsklick oder Entf löscht die Ecke unter dem Zeiger, drei bleiben.",
+    "en": "The cursor is the test point. Drag corners, click an edge to add one, right click or Del removes the corner under the cursor, three stay."
   },
   "post": {
     "de": "punkt-im-polygon",

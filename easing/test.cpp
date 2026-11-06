@@ -351,6 +351,36 @@ void chainWithNothingToDo() {
     assert(updateChain(0.0, a) == 0.0);
 }
 
+// Fixed low frame rate for the chain: time is cut into equal chunks and the rest waits in the accumulator. That rest
+// belongs to the old run, so a restart or a change of the chunk size has to throw it away.
+void chunkClockCutsEqualChunks() {
+    ChunkClock c;
+    assert(c.advance(0.15, 0.2) == 0);  // not enough for one chunk yet
+    assert(near(c.accumulator, 0.15));
+    assert(c.advance(0.05, 0.2) == 1);  // 0.15 + 0.05 = exactly one chunk
+    assert(near(c.accumulator, 0.0));
+    assert(c.advance(0.5, 0.2) == 2);  // two chunks, 0.1 stays behind
+    assert(near(c.accumulator, 0.1));
+}
+
+void chunkClockResetDropsTheRest() {
+    ChunkClock c;
+    c.advance(0.15, 0.2);  // 0.15 s of a run that is being restarted
+    c.reset();
+    assert(near(c.accumulator, 0.0));
+    // Without the reset the first chunk would come after 0.05 s instead of after a full chunk.
+    assert(c.advance(0.1, 0.2) == 0);
+    assert(c.advance(0.1, 0.2) == 1);
+}
+
+void chunkClockIgnoresNonsense() {
+    ChunkClock c;
+    assert(c.advance(-1.0, 0.2) == 0);  // backwards time adds nothing
+    assert(near(c.accumulator, 0.0));
+    assert(c.advance(1.0, 0.0) == 0);  // a chunk of 0 would never drain
+    assert(c.advance(1.0, -0.2) == 0);
+}
+
 }  // namespace
 
 int main() {
@@ -375,6 +405,9 @@ int main() {
     chainIsFrameRateIndependent();
     chainWithZeroDurationWaitsForItsTurn();
     chainWithNothingToDo();
+    chunkClockCutsEqualChunks();
+    chunkClockResetDropsTheRest();
+    chunkClockIgnoresNonsense();
     std::puts("easing logic: all tests passed");
     return EXIT_SUCCESS;
 }

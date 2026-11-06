@@ -395,16 +395,18 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
         app.yaw -= (p.x - app.lastMouse.x) * 0.008F;
         app.pitch = std::clamp(app.pitch + (p.y - app.lastMouse.y) * 0.008F, 0.05F, 1.45F);
         app.lastMouse = p;
-    } else if (event->type == SDL_EVENT_MOUSE_BUTTON_UP) {
-        app.dragging = false;
+    } else if (event->type == SDL_EVENT_MOUSE_BUTTON_UP || event->type == SDL_EVENT_WINDOW_MOUSE_LEAVE || event->type == SDL_EVENT_WINDOW_FOCUS_LOST) {
+        app.dragging = false;  // a release outside the canvas never arrives as BUTTON_UP, so leaving or losing focus ends the drag too
     } else if (event->type == SDL_EVENT_MOUSE_WHEEL) {
         app.dist = std::clamp(app.dist * std::exp(-event->wheel.y * 0.1F), 3.2F, 12.0F);
     } else if (event->type == SDL_EVENT_KEY_DOWN) {
+        // , and . scrub the time and are meant to repeat while held; the toggles are not
+        if (event->key.key == SDLK_COMMA) app.time = std::max(0.0, app.time - 0.1);  // scrub while paused
+        if (event->key.key == SDLK_PERIOD) app.time += 0.1;
+        if (event->key.repeat) return SDL_APP_CONTINUE;
         if (event->key.key == SDLK_H) app.heat = !app.heat;
         if (event->key.key == SDLK_S) app.shadows = !app.shadows;
         if (event->key.key == SDLK_SPACE) app.paused = !app.paused;
-        if (event->key.key == SDLK_COMMA) app.time = std::max(0.0, app.time - 0.1);  // scrub while paused
-        if (event->key.key == SDLK_PERIOD) app.time += 0.1;
     }
     return SDL_APP_CONTINUE;
 }
@@ -425,7 +427,7 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
     glBindFramebuffer(GL_FRAMEBUFFER, app.fbo);
     glViewport(0, 0, app.targetW, app.targetH);
     glUseProgram(app.march);
-    glUniform1f(app.u.time, static_cast<float>(app.time));
+    glUniform1f(app.u.time, static_cast<float>(gd::march::wrapTime(app.time)));
     glUniform1f(app.u.k, kBlend[static_cast<std::size_t>(app.blend)]);
     glUniform1i(app.u.maxSteps, kStepLimits[static_cast<std::size_t>(app.steps)]);
     glUniform1i(app.u.heat, app.heat ? 1 : 0);
@@ -481,11 +483,14 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
 void SDL_AppQuit(void* appstate, SDL_AppResult) {
     auto* app = static_cast<App*>(appstate);
     if (app != nullptr) {
-        app->hud.destroy();
-        app->target.destroy();
-        glDeleteFramebuffers(1, &app->fbo);
-        glDeleteProgram(app->march);
-        glDeleteProgram(app->blit);
+        // SDL_AppQuit also runs after a failed SDL_AppInit; without a GL context no glDelete* call is safe
+        if (app->win.context != nullptr) {
+            app->hud.destroy();
+            if (app->target.id != 0) app->target.destroy();
+            glDeleteFramebuffers(1, &app->fbo);
+            glDeleteProgram(app->march);
+            glDeleteProgram(app->blit);
+        }
         app->win.destroy();
         delete app;
     }

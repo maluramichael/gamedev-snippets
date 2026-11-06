@@ -194,10 +194,10 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
         if (app.hasLast) stroke(app, app.lastCell, cell);
         app.lastCell = cell;
         app.hasLast = true;
-    } else if (event->type == SDL_EVENT_MOUSE_BUTTON_UP) {
+    } else if (event->type == SDL_EVENT_MOUSE_BUTTON_UP || event->type == SDL_EVENT_WINDOW_MOUSE_LEAVE || event->type == SDL_EVENT_WINDOW_FOCUS_LOST) {
         app.dragging = false;
         app.hasLast = false;
-    } else if (event->type == SDL_EVENT_KEY_DOWN) {
+    } else if (event->type == SDL_EVENT_KEY_DOWN && !event->key.repeat) {
         if (event->key.key >= SDLK_1 && event->key.key <= SDLK_3) app.dampingIndex = static_cast<std::size_t>(event->key.key - SDLK_1);
         if (event->key.key == SDLK_R) app.rain = !app.rain;
     }
@@ -263,9 +263,12 @@ SDL_AppResult SDL_AppIterate(void* appstate) {
 void SDL_AppQuit(void* appstate, SDL_AppResult) {
     auto* app = static_cast<App*>(appstate);
     if (app != nullptr) {
-        app->hud.destroy();
-        app->heights.destroy();
-        glDeleteProgram(app->program);
+        // SDL_AppQuit also runs after a failed SDL_AppInit: GL objects exist only if the context does.
+        if (app->win.context != nullptr) {
+            app->hud.destroy();
+            app->heights.destroy();
+            glDeleteProgram(app->program);
+        }
         app->win.destroy();
         delete app;
     }

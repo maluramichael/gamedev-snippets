@@ -104,9 +104,24 @@ bool setResolution(App& app, int index) {
     app.resolution = index;
     app.pixels.assign(static_cast<std::size_t>(res.w) * static_cast<std::size_t>(res.h), rt::pack(rt::kSkyHorizon));
     SDL_UpdateTexture(app.texture, nullptr, app.pixels.data(), res.w * 4);
+    // The numbers of the old resolution do not describe this one: without the reset, rays/pixel would divide the old ray count
+    // by the new pixel count until the first pass has finished.
+    app.imageRays = 0;
+    app.imageMs = 0.0;
+    app.frameMs = 0.0;
+    app.raysPerSecond = 0.0;
+    app.done = 0;
     app.rendering = false;
     app.dirty = true;
     return true;
+}
+
+/// A shadow or reflection switch changes what a ray costs. A running pass would finish with mixed rows and a mixed ray count,
+/// so it starts over.
+void toggleOption(App& app, bool& option) {
+    option = !option;
+    app.rendering = false;
+    app.dirty = true;
 }
 
 void setLightFromMouse(App& app, float x, float y) {
@@ -278,25 +293,22 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
         const SDL_FRect shadows = shadowChip();
         const SDL_FRect reflections = reflectChip();
         if (SDL_PointInRectFloat(&p, &shadows)) {
-            app.options.shadows = !app.options.shadows;
-            app.dirty = true;
+            toggleOption(app, app.options.shadows);
         }
         if (SDL_PointInRectFloat(&p, &reflections)) {
-            app.options.reflections = !app.options.reflections;
-            app.dirty = true;
+            toggleOption(app, app.options.reflections);
         }
         setLightFromMouse(app, p.x, p.y);  // a tap on the image also moves the light (touch screens have no hover)
     }
     if (event->type == SDL_EVENT_KEY_DOWN) {
+        if (event->key.repeat) return SDL_APP_CONTINUE;  // all keys here switch something, none is meant to repeat
         if (event->key.key >= SDLK_1 && event->key.key <= SDLK_3) {
             const int index = static_cast<int>(event->key.key - SDLK_1);
             if (index != app.resolution && !setResolution(app, index)) return SDL_APP_FAILURE;
         } else if (event->key.key == SDLK_S) {
-            app.options.shadows = !app.options.shadows;
-            app.dirty = true;
+            toggleOption(app, app.options.shadows);
         } else if (event->key.key == SDLK_R) {
-            app.options.reflections = !app.options.reflections;
-            app.dirty = true;
+            toggleOption(app, app.options.reflections);
         }
     }
     return SDL_APP_CONTINUE;
