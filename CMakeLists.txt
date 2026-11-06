@@ -22,4 +22,5 @@ include(cmake/AddDemo.cmake)
 include(cmake/AddPythonDemo.cmake)
 
 add_demo(update-loop SOURCES update-loop/main.cpp)
+add_demo(delta-time SOURCES delta-time/main.cpp)
 add_python_demo(update-loop-py)

@@ -36,6 +36,7 @@ Serve `build/web/<demo>/` with any static file server, WebAssembly needs the rig
 | Folder | Topic | Blog post |
 |--------|-------|-----------|
 | `update-loop/` | Fixed timestep with an accumulator and interpolation | (published 2026-11-13) |
+| `delta-time/` | Delta time: motion independent of the frame rate | (published 2026-11-20) |
 
 ## Adding a demo
 
