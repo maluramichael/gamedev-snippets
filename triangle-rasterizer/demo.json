@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Dreiecke füllen ohne Nähte",
+    "en": "Filling Triangles Without Seams"
+  },
+  "hint": {
+    "de": "Ein Fächer aus Dreiecken auf einem vergrößerten Pixelraster. Zwischen Inclusive, Exclusive und Top-left umschalten, Ecken ziehen, mit der Maus über Pixel fahren.",
+    "en": "A fan of triangles on a magnified pixel grid. Switch between inclusive, exclusive and top-left, drag the corners, hover a pixel."
+  },
+  "post": {
+    "de": "dreiecke-fuellen",
+    "en": "filling-triangles"
+  },
+  "repo": "triangle-rasterizer",
+  "category": "graphics",
+  "publishAt": "2027-10-22T08:00:00+02:00"
+}
