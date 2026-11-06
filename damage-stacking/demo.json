@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Increased und More",
+    "en": "Increased vs More"
+  },
+  "hint": {
+    "de": "Ein Klick auf einen Bonus schiebt ihn zwischen den Töpfen Increased (addiert) und More (multipliziert). Mausrad über einem Bonus ändert den Prozentwert.",
+    "en": "Click a modifier to move it between the Increased pool (added) and the More pool (multiplied). The mouse wheel over a modifier changes its percentage."
+  },
+  "post": {
+    "de": "increased-und-more",
+    "en": "increased-vs-more"
+  },
+  "repo": "damage-stacking",
+  "category": "gameplay",
+  "publishAt": "2027-04-23T08:00:00+02:00"
+}
