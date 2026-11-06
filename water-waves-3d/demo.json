@@ -1,0 +1,7 @@
+{
+  "title": { "de": "Wasserwellen in 3D", "en": "3D water waves" },
+  "hint": { "de": "Ziehen dreht die Kamera, das Mausrad zoomt. Die Chips stellen den Wind ein und schalten Gitter, Schaum und Pause.", "en": "Drag to orbit, wheel to zoom. The chips set the wind and switch wireframe, foam and pause." },
+  "post": { "de": "wasserwellen-in-3d", "en": "3d-water-waves" },
+  "repo": "water-waves-3d",
+  "publishAt": "2027-01-22T08:00:00+01:00"
+}
