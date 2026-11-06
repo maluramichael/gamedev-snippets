@@ -1,0 +1,7 @@
+{
+  "title": { "de": "Voronoi-Diagramme", "en": "Voronoi diagrams" },
+  "hint": { "de": "Klick setzt einen Punkt, Ziehen bewegt ihn, Rechtsklick löscht. Die Chips wechseln Modus und Metrik, relax rückt die Punkte in ihre Zellmitte.", "en": "Click adds a point, drag moves it, right click deletes. The chips switch mode and metric, relax moves the points to their cell centers." },
+  "post": { "de": "voronoi-diagramme", "en": "voronoi-diagrams" },
+  "repo": "voronoi",
+  "publishAt": "2027-02-05T08:00:00+01:00"
+}
