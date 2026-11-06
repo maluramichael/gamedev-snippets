@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Erosion im Gelände",
+    "en": "Terrain Erosion"
+  },
+  "hint": {
+    "de": "Links das glatte Rauschen, rechts nach tausenden Regentropfen. Auf die rechte Karte ziehen regnet dort, Naive und Sediment zeigen den Fehler neben der Lösung, Thermal lässt steile Hänge rutschen.",
+    "en": "Smooth noise on the left, the same map after thousands of raindrops on the right. Drag on the right map to rain there, Naive and Sediment show the mistake next to the real thing, Thermal lets steep slopes slide."
+  },
+  "post": {
+    "de": "erosion-im-gelaende",
+    "en": "terrain-erosion"
+  },
+  "repo": "terrain-erosion",
+  "category": "terrain",
+  "publishAt": "2027-06-25T08:00:00+02:00"
+}
