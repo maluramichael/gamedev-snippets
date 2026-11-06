@@ -1,0 +1,11 @@
+{
+  "title": { "de": "Integratoren im Vergleich", "en": "Integrators Compared" },
+  "hint": {
+    "de": "Dieselbe Bahn und dieselbe Feder mit vier Verfahren. Ein dt-Chip wählt den Zeitschritt und startet neu, 1 bis 4 blenden Verfahren aus.",
+    "en": "The same orbit and the same spring with four methods. A dt chip picks the time step and restarts, 1 to 4 hide methods."
+  },
+  "post": { "de": "integratoren-im-vergleich", "en": "integrators-compared" },
+  "repo": "integration-methods",
+  "category": "physics",
+  "publishAt": "2027-09-10T08:00:00+02:00"
+}
