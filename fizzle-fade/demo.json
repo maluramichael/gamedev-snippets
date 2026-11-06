@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "FizzleFade: jedes Pixel genau einmal",
+    "en": "FizzleFade: Every Pixel Exactly Once"
+  },
+  "hint": {
+    "de": "Links wählt der Zufall Pixel und trifft immer öfter ein fertiges, rechts liefert ein Schieberegister jedes Pixel genau einmal. Auflösung und Tempo per Chip, R startet neu.",
+    "en": "On the left chance picks pixels and hits finished ones more and more often, on the right a shift register delivers every pixel exactly once. Size and speed by chip, R restarts."
+  },
+  "post": {
+    "de": "fizzlefade",
+    "en": "fizzlefade"
+  },
+  "repo": "fizzle-fade",
+  "category": "graphics",
+  "publishAt": "2027-10-01T08:00:00+02:00"
+}
