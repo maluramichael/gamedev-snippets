@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Affixe würfeln: Mini-Item-Generator",
+    "en": "Rolling Affixes: A Mini Item Generator"
+  },
+  "hint": {
+    "de": "Basis-Item und Item-Level wählen, dann Orbs anwenden. Der Pool zeigt, welche Mods als Nächstes fallen können und mit welcher Chance je Tier, rechts steht die Statistik von 2000 Alchemy-Würfen. Die beiden orangen Schalter zeigen die klassischen Fehler: Gewichte ignorieren und dieselbe Mod-Gruppe doppelt ziehen.",
+    "en": "Pick a base item and an item level, then use orbs. The pool shows which mods can come next and the chance of each tier, the right panel counts 2000 Alchemy rolls. The two orange switches show the classic mistakes: ignoring the weights and drawing the same mod group twice."
+  },
+  "post": {
+    "de": "affixe-wuerfeln",
+    "en": "rolling-affixes"
+  },
+  "repo": "affix-rolling",
+  "category": "gameplay",
+  "publishAt": "2027-08-27T08:00:00+02:00"
+}
