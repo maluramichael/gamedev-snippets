@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Kamera-Glättung",
+    "en": "Camera smoothing"
+  },
+  "hint": {
+    "de": "Drei Kameras jagen denselben Spieler. Schalte die Bildrate um: das naive Lerp (A) ändert sich stark, Exp-Decay (B) und die Feder (C) kaum.",
+    "en": "Three cameras chase the same player. Switch the frame rate: the naive lerp (A) changes a lot, exp decay (B) and the spring (C) barely."
+  },
+  "post": {
+    "de": "kamera-glaettung",
+    "en": "camera-smoothing"
+  },
+  "repo": "camera-smoothing",
+  "category": "time",
+  "publishAt": "2027-05-21T08:00:00+02:00"
+}
