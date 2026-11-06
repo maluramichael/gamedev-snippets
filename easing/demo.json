@@ -1,0 +1,16 @@
+{
+  "title": {
+    "de": "Easing und Tweening",
+    "en": "Easing and tweening"
+  },
+  "hint": {
+    "de": "Karte anklicken für die Detailansicht, in, out und inOut umschalten, Tab zeigt den Tween mit Kette.",
+    "en": "Click a card for the detail view, switch in, out and inOut, Tab shows the tween chain."
+  },
+  "post": {
+    "de": "easing-und-tweening",
+    "en": "easing-and-tweening"
+  },
+  "repo": "easing",
+  "publishAt": "2027-02-19T08:00:00+01:00"
+}
