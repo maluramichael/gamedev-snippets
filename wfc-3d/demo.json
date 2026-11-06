@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Wave Function Collapse in 3D",
+    "en": "Wave Function Collapse in 3D"
+  },
+  "hint": {
+    "de": "Eine Stadt wächst Stockwerk für Stockwerk aus 34 Tiles. Ziehen dreht die Kamera, das Mausrad zoomt, ein Klick auf einen Geist kollabiert die Zelle. Die Chips stellen Tempo, Reihenfolge und Konfliktbehandlung ein.",
+    "en": "A town grows floor by floor from 34 tiles. Drag to orbit, wheel to zoom, click a ghost cube to collapse that cell. The chips set speed, cell order and what happens on a conflict."
+  },
+  "post": {
+    "de": "wave-function-collapse-3d",
+    "en": "wave-function-collapse-3d"
+  },
+  "repo": "wfc-3d",
+  "category": "terrain",
+  "publishAt": "2027-09-03T08:00:00+02:00"
+}

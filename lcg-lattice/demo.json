@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Schlechter Zufall: der Fingerabdruck des LCG",
+    "en": "Bad Random: The Fingerprint of an LCG"
+  },
+  "hint": {
+    "de": "Links ein Punkt je Paar aufeinanderfolgender Zufallszahlen, rechts ein Bit jeder Zahl als Münzwürfe. Generator wählen, ein Bit anklicken, mit dem Zoom in die ersten Promille des Streifens schauen, mit dem neuen Seed neu würfeln.",
+    "en": "Left, one dot per pair of consecutive random numbers, right one bit of every number as coin flips. Pick a generator, click a bit, zoom into the first per mille of the strip, roll again with a new seed."
+  },
+  "post": {
+    "de": "schlechter-zufall-lcg",
+    "en": "bad-random-lcg"
+  },
+  "repo": "lcg-lattice",
+  "category": "gameplay",
+  "publishAt": "2027-10-15T08:00:00+02:00"
+}
