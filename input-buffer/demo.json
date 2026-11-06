@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Coyote Time und Input Buffer",
+    "en": "Coyote Time and Input Buffer"
+  },
+  "hint": {
+    "de": "Der Bot drückt Sprung immer ein bisschen zu früh oder zu spät. Stell Coyote- und Buffer-Fenster ein und sieh auf der Zeitleiste, welche Eingaben durchgehen. Mit \"you play\" springst du selbst, per Leertaste oder Klick.",
+    "en": "The bot presses jump a little too early or too late. Set the coyote and buffer windows and see on the timeline which inputs get through. With \"you play\" you jump yourself, with space or a click."
+  },
+  "post": {
+    "de": "coyote-time-und-input-buffer",
+    "en": "coyote-time-and-input-buffer"
+  },
+  "repo": "input-buffer",
+  "category": "gameplay",
+  "publishAt": "2027-05-14T08:00:00+02:00"
+}
