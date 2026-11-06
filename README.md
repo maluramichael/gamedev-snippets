@@ -1,5 +1,10 @@
 # gamedev-snippets
 
+<!-- links:start -->
+[![Support me on Ko-fi](https://malura.de/assets/badge/kofi.svg)](https://malura.de/go/kofi?ref=gamedev-snippets)
+[![Check out my page](https://malura.de/assets/badge/malura.svg)](https://malura.de/go/site?ref=gamedev-snippets)
+<!-- links:end -->
+
 Small, self-contained game development demos in C++20 with SDL3. Every folder is one topic, one
 demo, one blog post on [malura.de](https://malura.de). The same code builds natively and runs in the
 browser through WebAssembly.
