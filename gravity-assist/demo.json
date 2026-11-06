@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Swing-by: Schwung von einem Planeten holen",
+    "en": "Gravity Assist: Borrowing Speed From a Planet"
+  },
+  "hint": {
+    "de": "Ziehen setzt Start und Tempo der Sonde, die gestrichelte Linie ist der berechnete Flug. Wechsle zwischen Sonnen- und Planetensicht: Nur in der Sonnensicht verlässt die Sonde den Planeten mit anderem Tempo, als sie kam.",
+    "en": "Drag to set the probe's start and velocity, the dashed line is the computed flight. Switch between the sun's and the planet's point of view: only in the sun's does the probe leave the planet at a different speed than it arrived."
+  },
+  "post": {
+    "de": "swing-by",
+    "en": "gravity-assist"
+  },
+  "repo": "gravity-assist",
+  "category": "space",
+  "publishAt": "2027-10-29T08:00:00+02:00"
+}
