@@ -51,6 +51,10 @@ Serve `build/web/<demo>/` with any static file server, WebAssembly needs the rig
 | `voronoi/` | Voronoi diagrams | Terrain & Procedural |
 | `xp-curves/` | XP curves | Gameplay & Balance |
 | `easing/` | Easing and tweening | Time & Motion |
+| `ca-caves/` | Caves with Cellular Automata | Terrain & Procedural |
+| `terrain-mesh/` | Terrain in 3D | Terrain & Procedural |
+| `poisson-disc/` | Poisson Disc Sampling | Terrain & Procedural |
+| `curved-paths/` | Curves: Bezier and Arcs | Graphics |
 
 Every demo runs on <https://demos.malura.de>, where the gallery can be filtered by category.
 
