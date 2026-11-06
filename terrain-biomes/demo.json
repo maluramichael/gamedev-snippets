@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Biome und Hillshade",
+    "en": "Biomes and Hillshade"
+  },
+  "hint": {
+    "de": "Höhe und Feuchte ergeben per Biom-Tabelle die Landschaft. Mit den Chips zwischen nur Höhe und Höhe plus Feuchte sowie harten und weichen Kanten wechseln, vier Regler für Feuchte, Temperatur, Übergang und Sonne, Mauszeiger über der Karte zeigt den Punkt in der Tabelle.",
+    "en": "Height and moisture pick the landscape from a biome table. Use the chips to switch between height only and height plus moisture and between hard and soft edges, four sliders for moisture, temperature, blend and sun, hover the map to see the point in the table."
+  },
+  "post": {
+    "de": "biome-und-hillshade",
+    "en": "biomes-and-hillshade"
+  },
+  "repo": "terrain-biomes",
+  "category": "terrain",
+  "publishAt": "2027-02-19T08:00:00+01:00"
+}
