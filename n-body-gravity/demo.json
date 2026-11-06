@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Schwerkraft zwischen vielen Körpern",
+    "en": "Gravity Between Many Bodies"
+  },
+  "hint": {
+    "de": "Ziehen im Weltraum setzt einen neuen Körper mit Anfangsgeschwindigkeit, der Pfeil zeigt eine Sekunde Flug. Die Chips starten die Szene neu, mit anderem Integrator (Euler, Leapfrog, RK4), Zeitschritt oder Softening. Links stehen Energie und Impuls. Tasten: 1 bis 4, M, S, T, R, Leertaste.",
+    "en": "Drag in space to place a new body with a starting velocity, the arrow shows one second of flight. The chips restart the scene with another integrator (Euler, leapfrog, RK4), time step or softening. Energy and momentum are on the left. Keys: 1 to 4, M, S, T, R, space."
+  },
+  "post": {
+    "de": "n-koerper-schwerkraft",
+    "en": "n-body-gravity"
+  },
+  "repo": "n-body-gravity",
+  "category": "space",
+  "publishAt": "2027-10-08T08:00:00+02:00"
+}
