@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Inseln und Küsten",
+    "en": "Islands and coastlines"
+  },
+  "hint": {
+    "de": "Links die Karte, rechts ein Schnitt durch eine Zeile (Maus über die Karte). Form und Mischung per Chip, Meeresspiegel, Stärke und Kurve per Regler. Die Ansicht zeigt Rauschen und Falloff einzeln.",
+    "en": "The map on the left, a cut through one row on the right (hover the map). Shape and mixing by chip, sea level, strength and curve by slider. The view shows the noise and the falloff on their own."
+  },
+  "post": {
+    "de": "inseln-und-kuesten",
+    "en": "islands-and-coastlines"
+  },
+  "repo": "terrain-island",
+  "category": "terrain",
+  "publishAt": "2027-02-12T08:00:00+01:00"
+}
