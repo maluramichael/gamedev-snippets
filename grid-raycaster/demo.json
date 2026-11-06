@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Wolfenstein-Raycaster",
+    "en": "Wolfenstein-style raycaster"
+  },
+  "hint": {
+    "de": "Links die Karte mit einem Strahl je Spalte, rechts das Bild. Die Chips wechseln zwischen DDA und festem Schritt sowie zwischen gerader und senkrechter Entfernung (Fischauge). Zellen anklicken setzt Wände, im Bild ziehen dreht.",
+    "en": "The map with one ray per column on the left, the view on the right. The chips switch between DDA and fixed step, and between straight and perpendicular distance (fisheye). Click cells to place walls, drag in the view to turn."
+  },
+  "post": {
+    "de": "wolfenstein-raycaster",
+    "en": "wolfenstein-style-raycaster"
+  },
+  "repo": "grid-raycaster",
+  "category": "graphics",
+  "publishAt": "2027-11-05T08:00:00+01:00"
+}
