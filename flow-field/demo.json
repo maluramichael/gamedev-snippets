@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Flow Fields",
+    "en": "Flow Fields"
+  },
+  "hint": {
+    "de": "Klick oder Ziehen setzt das Ziel, mit Chip 2 malst du Wände. Wärmekarte und Pfeile lassen sich ein- und ausblenden. Chip 6 lässt jeden Agenten für sich per A* suchen, die Karte darunter zählt den Aufwand.",
+    "en": "Click or drag moves the goal, tool 2 paints walls. Heat map and arrows can be switched off. Chip 6 makes every agent search with A* on its own, the card below counts the work."
+  },
+  "post": {
+    "de": "flow-fields",
+    "en": "flow-fields"
+  },
+  "repo": "flow-field",
+  "category": "ai",
+  "publishAt": "2026-12-25T08:00:00+01:00"
+}
