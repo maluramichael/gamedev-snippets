@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Hohmann-Transfer",
+    "en": "Hohmann transfer"
+  },
+  "hint": {
+    "de": "Zünde im richtigen Fenster, wenn das Ziel gerade weit genug voraus ist, und ein zweites Mal am fernsten Punkt der Ellipse. Der Autopilot macht es vor, mit 'At target' zeigt der Schub direkt aufs Ziel.",
+    "en": "Burn in the window, when the target is just far enough ahead, and a second time at the far end of the ellipse. The autopilot shows how, with 'At target' the thrust points straight at the target."
+  },
+  "post": {
+    "de": "hohmann-transfer",
+    "en": "hohmann-transfer"
+  },
+  "repo": "hohmann-transfer",
+  "category": "space",
+  "publishAt": "2027-11-12T08:00:00+01:00"
+}
