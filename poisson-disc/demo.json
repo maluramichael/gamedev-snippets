@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Poisson-Disc-Sampling",
+    "en": "Poisson Disc Sampling"
+  },
+  "hint": {
+    "de": "Dieselbe Punktzahl dreimal: Zufall, Jittered Grid und Poisson Disc. Im rechten Feld mit der Maus malen macht die Punkte dichter, r und k lassen sich per Chip ändern.",
+    "en": "The same number of points three ways: random, jittered grid and Poisson disc. Paint in the right panel to make the points denser, change r and k with the chips."
+  },
+  "post": {
+    "de": "poisson-disc-sampling",
+    "en": "poisson-disc-sampling"
+  },
+  "repo": "poisson-disc",
+  "category": "terrain",
+  "publishAt": "2027-11-12T08:00:00+01:00"
+}

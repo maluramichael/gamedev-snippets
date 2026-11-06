@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Höhlen mit Zellulärautomaten",
+    "en": "Caves with Cellular Automata"
+  },
+  "hint": {
+    "de": "Zufallswände, dann die 4-5-Regel Durchlauf für Durchlauf (Leertaste). Der Regler ändert die Wanddichte, Klick auf eine Höhle startet einen Flood Fill und zeigt, welche Teile abgeschottet sind. Chip 2 aktualisiert die Karte falsch, nämlich an Ort und Stelle.",
+    "en": "Random walls, then the 4-5 rule pass by pass (Space). The slider changes the wall density, a click on a cave starts a flood fill and shows which parts are cut off. Chip 2 updates the map the wrong way, in place."
+  },
+  "post": {
+    "de": "hoehlen-mit-zellularautomaten",
+    "en": "caves-with-cellular-automata"
+  },
+  "repo": "ca-caves",
+  "category": "terrain",
+  "publishAt": "2027-10-29T08:00:00+02:00"
+}

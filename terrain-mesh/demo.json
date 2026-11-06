@@ -1,0 +1,8 @@
+{
+  "title": { "de": "Gelände in 3D", "en": "Terrain in 3D" },
+  "hint": { "de": "Ziehen schaut sich um, WASD fliegt. Die Chips schalten zwischen Welt- und Chunk-Koordinaten, Skirts an und aus und zeigen die LOD-Stufen oder das Drahtgitter.", "en": "Drag to look around, WASD to fly. The chips switch between world and chunk coordinates, skirts on and off, and show the LOD levels or the wireframe." },
+  "post": { "de": "gelaende-in-3d", "en": "terrain-in-3d" },
+  "repo": "terrain-mesh",
+  "category": "terrain",
+  "publishAt": "2027-10-22T08:00:00+02:00"
+}
