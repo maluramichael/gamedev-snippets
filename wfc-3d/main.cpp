@@ -263,7 +263,7 @@ bool createWindow(gd::gl::Window& win) {
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
     SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);
-    win.window = SDL_CreateWindow("wfc-3d", gd::gl::kWidth, gd::gl::kHeight, SDL_WINDOW_OPENGL);
+    win.window = SDL_CreateWindow("wfc-3d", gd::gl::kWidth, gd::gl::kHeight, SDL_WINDOW_OPENGL | SDL_WINDOW_HIGH_PIXEL_DENSITY);
     if (win.window == nullptr) {
         SDL_Log("window failed: %s", SDL_GetError());
         return false;

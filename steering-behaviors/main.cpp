@@ -385,7 +385,7 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char** argv) {
         SDL_Log("SDL_Init failed: %s", SDL_GetError());
         return SDL_APP_FAILURE;
     }
-    if (!SDL_CreateWindowAndRenderer("steering-behaviors", kWidth, kHeight, 0, &app->window, &app->renderer)) {
+    if (!SDL_CreateWindowAndRenderer("steering-behaviors", kWidth, kHeight, SDL_WINDOW_HIGH_PIXEL_DENSITY, &app->window, &app->renderer)) {
         SDL_Log("window/renderer failed: %s", SDL_GetError());
         return SDL_APP_FAILURE;
     }

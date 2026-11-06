@@ -160,7 +160,7 @@ struct Window {
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
         SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 0);
         SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 0);
-        window = SDL_CreateWindow(title, kWidth, kHeight, SDL_WINDOW_OPENGL);
+        window = SDL_CreateWindow(title, kWidth, kHeight, SDL_WINDOW_OPENGL | SDL_WINDOW_HIGH_PIXEL_DENSITY);
         if (window == nullptr) {
             SDL_Log("window failed: %s", SDL_GetError());
             return false;

@@ -18,6 +18,9 @@ Every demo is one folder. CMake finds it by its `demo.json`, there is no list to
 * Canvas is **960x540**. Call `SDL_SetRenderLogicalPresentation(renderer, 960, 540, SDL_LOGICAL_PRESENTATION_LETTERBOX)` right
   after the renderer exists and `SDL_ConvertEventToRenderCoordinates(renderer, event)` at the top of `SDL_AppEvent`, so the
   demo scales with the page and the mouse maps correctly.
+* Create the window with `SDL_WINDOW_HIGH_PIXEL_DENSITY` (`SDL_CreateWindowAndRenderer(title, 960, 540, SDL_WINDOW_HIGH_PIXEL_DENSITY, ...)`,
+  `gd::gl::Window::create` does it already). Without it the browser draws a 960x540 canvas and stretches it, which looks soft on
+  retina screens and whenever the demo is shown larger than 960 px.
 * Use `common/hud.hpp` (`#include "hud.hpp"`): JetBrains Mono from embedded bitmap atlases, teal and orange on paper with a grid.
 
   ```cpp
