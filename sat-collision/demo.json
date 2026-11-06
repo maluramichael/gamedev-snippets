@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "SAT-Kollision",
+    "en": "SAT collision"
+  },
+  "hint": {
+    "de": "Formen ziehen, mit Mausrad oder Q/E drehen. Die Chips schalten Normalisieren und MTV-Richtung um, Pfeiltasten wählen die Achse, Leertaste schiebt B heraus, 1 bis 3 wechseln das Formenpaar.",
+    "en": "Drag the shapes, rotate with the wheel or Q/E. The chips switch normalizing and MTV direction, arrow keys pick the axis, space pushes B out, 1 to 3 change the pair of shapes."
+  },
+  "post": {
+    "de": "sat-kollision",
+    "en": "sat-collision"
+  },
+  "repo": "sat-collision",
+  "category": "physics",
+  "publishAt": "2027-01-22T08:00:00+01:00"
+}
