@@ -1,0 +1,16 @@
+{
+  "title": {
+    "de": "Bild laden und rendern",
+    "en": "Loading and rendering an image"
+  },
+  "hint": {
+    "de": "Klick auf ein Bild zeigt die Bytes eines Pixels, die Chips ändern Skalierung, Zoom, Spiegelung und die CPU-Schleife, Mausrad zoomt.",
+    "en": "Click an image to see the bytes of a pixel, the chips change scaling, zoom, flipping and the CPU loop, the wheel zooms."
+  },
+  "post": {
+    "de": "bild-laden-und-rendern",
+    "en": "loading-and-rendering-an-image"
+  },
+  "repo": "image-loading",
+  "publishAt": "2026-12-25T08:00:00+01:00"
+}
