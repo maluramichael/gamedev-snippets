@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Sichtfeld und Schatten in 2D",
+    "en": "2D Visibility and Shadows"
+  },
+  "hint": {
+    "de": "Die Maus ist das Licht. Wandecken ziehen, zwischen korrekten und naiven Strahlen umschalten, F für den Taschenlampen-Kegel (Mausrad oder Q/E dreht ihn).",
+    "en": "The mouse is the light. Drag wall corners, switch between correct and naive rays, F for a flashlight cone (mouse wheel or Q/E turns it)."
+  },
+  "post": {
+    "de": "sichtfeld-und-schatten-in-2d",
+    "en": "2d-visibility-and-shadows"
+  },
+  "repo": "visibility-polygon",
+  "category": "physics",
+  "publishAt": "2027-04-09T08:00:00+02:00"
+}
