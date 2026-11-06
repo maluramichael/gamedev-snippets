@@ -8,6 +8,6 @@ HOST=malura.de
 ROOT=/srv/www/demos
 [ -f "$DIR/demo.json" ] || { echo "$DIR/demo.json missing" >&2; exit 1; }
 case "$NAME" in ""|*[!a-z0-9-]*) echo "name must match [a-z0-9-]+: $NAME" >&2; exit 1 ;; esac
-rsync -a --delete --no-o --no-g --chmod=D755,F644 "$DIR"/ "$HOST:$ROOT/$NAME/"
-ssh "$HOST" "chown -R www-data:www-data '$ROOT/$NAME' && sh '$ROOT/_shared/reindex.sh' '$ROOT'"
+rsync -a --delete --no-o --no-g "$DIR"/ "$HOST:$ROOT/$NAME/"
+ssh "$HOST" "chown -R www-data:www-data '$ROOT/$NAME' && chmod -R u=rwX,go=rX '$ROOT/$NAME' && sh '$ROOT/_shared/reindex.sh' '$ROOT'"
 echo "https://demos.malura.de/$NAME/"
