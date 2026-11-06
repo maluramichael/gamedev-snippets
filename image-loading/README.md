@@ -1,5 +1,3 @@
 # image-loading
 
 The way from a PNG file to a pixel on the screen, in four panels. A 64x64 RGBA sprite lies in the binary as a byte array and is loaded with `SDL_LoadPNG_IO`. Panel 1 shows the file bytes through our own chunk reader (signature, IHDR, IDAT, IEND, each CRC checked), panel 2 the resulting `SDL_Surface` with its pixel format, byte order and pitch, and a click on an image shows the bytes of that pixel and the offset `y * pitch + x * 4`. Panel 3 draws the same pixels as an `SDL_Texture` with nearest or linear scaling, zoom, flipping, color and alpha modulation. Panel 4 runs a CPU loop (grayscale, invert, tint) over the surface rows, times it and makes a new texture from the result. "pad rows" gives the surface a pitch larger than `width * 4`, and "width*4 bug" shows what a loop does that ignores it. The damage chips break the file: a wrong signature and a cut off file make SDL refuse it, a wrong CRC does not. The logic is in `logic.hpp` and covered by `test.cpp`, `make_asset.py` draws the sprite and writes `asset.hpp`.
-
-Write-up: https://malura.de/en/blog/loading-and-rendering-an-image

@@ -28,22 +28,14 @@ export function listedDemos(demos) {
   });
 }
 
-/** What the link bar shows for one demo, in language "de" or "en". */
+/** What the link bar shows for one demo, in language "de" or "en". The post link appears once the post is live, before that the bar says nothing about it. */
 export function barModel(demo, lang, now = new Date()) {
   const language = lang === "de" ? "de" : "en";
   const slug = demo.post?.[language];
   const live = isPostLive(demo.publishAt, now);
   const postUrl = live && slug ? (language === "de" ? `${BLOG}/blog/${slug}` : `${BLOG}/en/blog/${slug}`) : null;
-  let notice = null;
-  if (!live) {
-    const date = new Date(demo.publishAt).toLocaleDateString(language === "de" ? "de-DE" : "en-GB", {
-      timeZone: "Europe/Berlin",
-    });
-    notice = language === "de" ? `Post erscheint am ${date}` : `Post appears on ${date}`;
-  }
   return {
     postUrl,
-    notice,
     repoUrl: `${REPO}/tree/master/${demo.repo}`,
     kofiUrl: KOFI_URL,
     homeUrl: BLOG,

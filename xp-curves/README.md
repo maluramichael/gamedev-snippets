@@ -7,5 +7,3 @@ in the lower plot. Hover the plots to read level, cost, total and hours. A simul
 climbs the curve (x1, x10, x100). The curve math, the level lookup (binary search over the thresholds), the 64 bit
 saturation and the number formatting are in `logic.hpp` and covered by `test.cpp`, which also checks the RuneScape
 values (level 2 = 83, level 10 = 1,154, level 50 = 101,333, level 99 = 13,034,431).
-
-Write-up: https://malura.de/en/blog/xp-curves

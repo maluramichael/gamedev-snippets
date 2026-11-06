@@ -10,7 +10,7 @@ Every demo is one folder. CMake finds it by its `demo.json`, there is no list to
   requires-gl     optional empty marker file: GPU demo (OpenGL ES 3 / WebGL2), built for the web only
   demo.json       title/hint (de, en), post slugs, repo folder, publishAt
   thumb.png       screenshot of the canvas, 1280x720
-  README.md       one paragraph and the link to the post
+  README.md       one paragraph, no link to the post (the demo page links it by itself once the post is live)
 ```
 
 ## Look (same on every demo)

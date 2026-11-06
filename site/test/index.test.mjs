@@ -32,10 +32,11 @@ const demo = {
   publishAt: "2026-11-13T08:00:00+01:00",
 };
 
-test("barModel shows a notice instead of the post link before publishAt", () => {
+test("barModel has no post link and says nothing about a coming post before publishAt", () => {
   const model = barModel(demo, "de", now);
   assert.equal(model.postUrl, null);
-  assert.match(model.notice, /13\.11\.2026/);
+  assert.equal("notice" in model, false);
+  assert.equal(JSON.stringify(model).includes("13"), false);
 });
 
 test("barModel links the post of the active language after publishAt", () => {

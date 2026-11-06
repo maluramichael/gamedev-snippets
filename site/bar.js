@@ -26,11 +26,6 @@ if (params.get("embed") !== "1") {
       add("demos.malura.de", "/");
       add(label.all, "/");
       if (model.postUrl) add(label.post, model.postUrl);
-      else if (model.notice) {
-        const span = document.createElement("span");
-        span.textContent = model.notice;
-        bar.append(span);
-      }
       add(label.source, model.repoUrl);
       add("Ko-fi", model.kofiUrl);
       add("malura.de", model.homeUrl);

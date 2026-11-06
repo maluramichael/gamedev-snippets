@@ -7,5 +7,3 @@ means inside). The pentagram is where they disagree: its middle is outside for e
 can be dragged, a click on an edge adds one, right click or Del removes one (three stay). "Snap ray to corner" puts
 the ray exactly through a corner, the case that `(a.y > p.y) != (b.y > p.y)` exists for. The logic is in `logic.hpp`
 and covered by `test.cpp`.
-
-Write-up: https://malura.de/en/blog/point-in-polygon

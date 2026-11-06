@@ -7,5 +7,4 @@ impulse iterations with warm starting so stacks stand still. The world runs in f
 accumulator. Click empty space to spawn a body, drag a body with the mouse spring, R clears the scene. The logic
 (`logic.hpp`) has no SDL dependency and is covered by `test.cpp`.
 
-The write-up is at [malura.de/en/blog/rigid-bodies](https://malura.de/en/blog/rigid-bodies).
 See also [delta-time](../delta-time) and [fixed-timestep](../fixed-timestep) for the loop underneath.

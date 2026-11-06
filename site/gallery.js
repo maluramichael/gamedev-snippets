@@ -37,14 +37,6 @@ function card(demo) {
   hint.textContent = demo.hint?.[lang] ?? "";
   text.append(title, hint);
 
-  if (demo.publishAt && !isPostLive(demo.publishAt)) {
-    const badge = document.createElement("span");
-    badge.className = "badge";
-    const date = new Date(demo.publishAt).toLocaleDateString(lang === "de" ? "de-DE" : "en-GB", { timeZone: "Europe/Berlin" });
-    badge.textContent = lang === "de" ? `Post folgt am ${date}` : `post on ${date}`;
-    shot.append(badge);
-  }
-
   link.append(shot, text);
   return link;
 }
