@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Pity-Timer",
+    "en": "Pity Timer"
+  },
+  "hint": {
+    "de": "Zehntausend Spieler würfeln, bis der Drop kommt. Zufall, Pseudo-Zufall und Pity umschalten, Drop-Rate und Garantie mit den Chips verstellen.",
+    "en": "Ten thousand players roll until the drop shows up. Switch between random, pseudo-random and pity, change the drop rate and the guarantee with the chips."
+  },
+  "post": {
+    "de": "pity-timer",
+    "en": "pity-timer"
+  },
+  "repo": "pity-timer",
+  "category": "gameplay",
+  "publishAt": "2027-04-16T08:00:00+02:00"
+}
