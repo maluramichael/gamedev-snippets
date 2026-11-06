@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Boids: Schwarmverhalten",
+    "en": "Boids: Flocking"
+  },
+  "hint": {
+    "de": "Drei Regler für Separation, Alignment und Cohesion, die Maus ist ein Raubtier. Gitter-Suche gegen Brute Force zeigt Paartests und Rechenzeit, Show grid die Zellen, die ein Vogel ansieht.",
+    "en": "Three sliders for separation, alignment and cohesion, the mouse is a predator. Grid search against brute force shows the pair tests and the step time, Show grid the cells one bird looks at."
+  },
+  "post": {
+    "de": "boids-schwarmverhalten",
+    "en": "boids-flocking"
+  },
+  "repo": "boids",
+  "category": "ai",
+  "publishAt": "2027-01-08T08:00:00+01:00"
+}
