@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Hex-Wegfindung",
+    "en": "Hex Pathfinding"
+  },
+  "hint": {
+    "de": "Mit dem Pinsel Wände, Wald und Sumpf malen (Rechtsklick löscht), A und B verschieben. Zwischen Hex- und Quadratraster umschalten: dieselbe Karte, derselbe A*. Heuristik aus ergibt Dijkstra.",
+    "en": "Paint walls, forest and swamp with the brush (right click erases), drag A and B. Switch between hex and square grid: same map, same A*. Heuristic off gives Dijkstra."
+  },
+  "post": {
+    "de": "hex-wegfindung",
+    "en": "hex-pathfinding"
+  },
+  "repo": "hex-astar",
+  "category": "ai",
+  "publishAt": "2027-03-19T08:00:00+01:00"
+}
