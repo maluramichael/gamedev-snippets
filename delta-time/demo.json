@@ -1,7 +1,7 @@
 {
   "title": { "de": "Delta Time: Bewegung unabhängig von der Framerate", "en": "Delta time: motion independent of the frame rate" },
   "hint": { "de": "Klick wechselt die Bildrate. Das rote Quadrat bewegt sich pro Frame und wird langsam, das blaue nutzt die Frame-Zeit und bleibt gleich schnell.", "en": "Click to change the frame rate. The red square moves per frame and slows down, the blue one uses the frame time and keeps its speed." },
-  "post": { "de": "delta-time", "en": "delta-time" },
+  "post": { "de": "delta-time", "en": "delta-time-motion-independent-of-the-frame-rate" },
   "repo": "delta-time",
   "publishAt": "2026-11-20T08:00:00+01:00"
 }
