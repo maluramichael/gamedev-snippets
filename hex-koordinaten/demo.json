@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Hex-Koordinaten",
+    "en": "Hex Coordinates"
+  },
+  "hint": {
+    "de": "Klicken oder Ziehen setzt den Cursor, seine sechs Nachbarn leuchten orange. Mit der Maus über ein Feld fahren misst die Distanz. Chips wechseln Pointy/Flat, Odd/Even und die Beschriftung, Naive zeigt die falsche Distanz auf dem Offset-Raster. Q W E A D Z X C oder die Pfeiltasten (mit Shift) bewegen den Cursor.",
+    "en": "Click or drag to place the cursor, its six neighbors light up orange. Hover a cell to measure the distance. Chips switch pointy/flat, odd/even and the labels, Naive shows the wrong distance on the offset grid. Q W E A D Z X C or the arrow keys (with Shift) move the cursor."
+  },
+  "post": {
+    "de": "hex-koordinaten",
+    "en": "hex-coordinates"
+  },
+  "repo": "hex-koordinaten",
+  "category": "grid",
+  "publishAt": "2026-12-04T08:00:00+01:00"
+}
