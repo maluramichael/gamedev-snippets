@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Hex: Ringe, Spiralen, Drehung",
+    "en": "Hex: Rings, Spirals, Rotation"
+  },
+  "hint": {
+    "de": "Ring und Spirale laufen Feld für Feld ab (Radius mit - und +). Im Modus Rotate Pivot anklicken, Form mit Q und E um 60° drehen, mit 4, 5, 6 spiegeln. N dreht naiv mit Sinus und Kosinus.",
+    "en": "Ring and spiral are walked cell by cell (radius with - and +). In Rotate mode click a pivot, turn the shape by 60° with Q and E, mirror with 4, 5, 6. N turns it naively with sine and cosine."
+  },
+  "post": {
+    "de": "hex-ringe-spiralen-drehung",
+    "en": "hex-rings-spirals-rotation"
+  },
+  "repo": "hex-ring-rotation",
+  "category": "grid",
+  "publishAt": "2027-03-05T08:00:00+01:00"
+}
