@@ -1,0 +1,16 @@
+{
+  "title": {
+    "de": "XP-Kurven",
+    "en": "XP curves"
+  },
+  "hint": {
+    "de": "Kurvenfamilie wählen, die Regler ziehen und mit der Maus über den Plot fahren: Level, XP und Spielzeit stehen im Tooltip.",
+    "en": "Pick a curve family, drag the sliders and hover the plot: level, XP and play time show up in the tooltip."
+  },
+  "post": {
+    "de": "xp-kurven",
+    "en": "xp-curves"
+  },
+  "repo": "xp-curves",
+  "publishAt": "2027-02-12T08:00:00+01:00"
+}
