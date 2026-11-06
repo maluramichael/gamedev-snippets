@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Flüsse und Seen",
+    "en": "Rivers and Lakes"
+  },
+  "hint": {
+    "de": "Mit der Maus über die Karte fahren: ein Regentropfen folgt dem Gefälle. Raw zeigt die Senken (orange), in denen das Wasser hängen bleibt, Fill sinks macht Seen daraus und lässt die Flüsse bis zum Meer laufen. Regler für Fluss-Schwelle und Meeresspiegel.",
+    "en": "Move the mouse over the map: a raindrop follows the slope. Raw shows the pits (orange) where the water gets stuck, Fill sinks turns them into lakes and lets the rivers reach the sea. Sliders for river threshold and sea level."
+  },
+  "post": {
+    "de": "fluesse-und-seen",
+    "en": "rivers-and-lakes"
+  },
+  "repo": "terrain-rivers",
+  "category": "terrain",
+  "publishAt": "2027-07-02T08:00:00+02:00"
+}
