@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Gelände aus Rauschen",
+    "en": "Terrain from Noise"
+  },
+  "hint": {
+    "de": "Links Value-, rechts Gradient-Rauschen aus denselben Reglern. Regler ziehen, Karte ziehen verschiebt den Ausschnitt, die Chips wechseln Fade-Kurve, Terrain-Ansicht und Normalisierung.",
+    "en": "Value noise on the left, gradient noise on the right, both from the same sliders. Drag the sliders, drag a map to pan, the chips switch the fade curve, terrain view and normalization."
+  },
+  "post": {
+    "de": "gelaende-aus-rauschen",
+    "en": "terrain-from-noise"
+  },
+  "repo": "terrain-fbm",
+  "category": "terrain",
+  "publishAt": "2026-11-13T08:00:00+01:00"
+}
