@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Höhenkurven und Terrassen",
+    "en": "Height Curves and Terraces"
+  },
+  "hint": {
+    "de": "Ziehen auf der Karte verschiebt den Ausschnitt, die Maus darüber wählt die Profillinie. Die Punkte der Kurve lassen sich ziehen. Chips: Kurvenform, Terrassen, Ridged, naive Variante, Oktaven, neuer Seed.",
+    "en": "Drag the map to pan, hover it to pick the profile row. The curve points can be dragged. Chips: curve shape, terraces, ridged, naive variant, octaves, new seed."
+  },
+  "post": {
+    "de": "hoehenkurven-und-terrassen",
+    "en": "height-curves-and-terraces"
+  },
+  "repo": "terrain-shaping",
+  "category": "terrain",
+  "publishAt": "2026-11-20T08:00:00+01:00"
+}
