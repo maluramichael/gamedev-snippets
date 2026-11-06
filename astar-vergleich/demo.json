@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Wegfindung im Raster",
+    "en": "Pathfinding on a grid"
+  },
+  "hint": {
+    "de": "Wand, Matsch und Start/Ziel per Maus malen und ziehen. Chips wechseln BFS, Dijkstra, Greedy und A*, Diagonalen schalten auf 8 Richtungen, der Regler gewichtet die Heuristik.",
+    "en": "Paint walls and mud, drag start and goal. The chips switch BFS, Dijkstra, greedy and A*, Diagonals switches to 8 directions, the slider weights the heuristic."
+  },
+  "post": {
+    "de": "wegfindung-im-raster",
+    "en": "pathfinding-on-a-grid"
+  },
+  "repo": "astar-vergleich",
+  "category": "ai",
+  "publishAt": "2026-12-18T08:00:00+01:00"
+}
