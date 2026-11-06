@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Gamma und lineares Licht",
+    "en": "Gamma and Linear Light"
+  },
+  "hint": {
+    "de": "Ziehe auf den Balken, um zwei Farben zu mischen: oben mit den sRGB-Werten, darunter als Licht. Unten rechnen vier Kugeln dasselbe Licht mit verschiedenen Fehlern. Die Maus über den Kugeln bewegt das Licht.",
+    "en": "Drag on the bars to mix two colors: the top bar mixes the sRGB values, the one below mixes light. The four spheres below are lit with the same light and different mistakes. The mouse over the spheres moves the light."
+  },
+  "post": {
+    "de": "gamma-und-lineares-licht",
+    "en": "gamma-and-linear-light"
+  },
+  "repo": "gamma-linear",
+  "category": "graphics",
+  "publishAt": "2027-06-11T08:00:00+02:00"
+}
