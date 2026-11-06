@@ -1,0 +1,16 @@
+{
+  "title": {
+    "de": "Punkt im Polygon",
+    "en": "Point in polygon"
+  },
+  "hint": {
+    "de": "Der Mauszeiger ist der Testpunkt. Ecken ziehen, auf eine Kante klicken fügt eine Ecke ein, Rechtsklick löscht.",
+    "en": "The cursor is the test point. Drag corners, click an edge to add one, right click removes."
+  },
+  "post": {
+    "de": "punkt-im-polygon",
+    "en": "point-in-polygon"
+  },
+  "repo": "point-in-polygon",
+  "publishAt": "2026-12-04T08:00:00+01:00"
+}
