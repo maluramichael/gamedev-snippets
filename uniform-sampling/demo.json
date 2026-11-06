@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Gleichverteilt im Kreis und Dreieck",
+    "en": "Uniform Sampling in a Disc and a Triangle"
+  },
+  "hint": {
+    "de": "Links der naive Weg, rechts die richtige Formel, beide mit denselben Zufallszahlen. Chips wechseln zwischen Kreis, Dreieck und Kugel und zwischen 1k, 5k und 20k Punkten. Die Balken zählen die Punkte in zehn Ringen gleicher Fläche. Die Kugel lässt sich mit der Maus drehen.",
+    "en": "Naive on the left, the correct formula on the right, both fed the same random numbers. Chips switch between disc, triangle and sphere and between 1k, 5k and 20k points. The bars count the points in ten bands of equal area. Drag the sphere to turn it."
+  },
+  "post": {
+    "de": "gleichverteilt-im-kreis",
+    "en": "uniform-sampling-in-a-disc"
+  },
+  "repo": "uniform-sampling",
+  "category": "gameplay",
+  "publishAt": "2027-09-24T08:00:00+02:00"
+}
