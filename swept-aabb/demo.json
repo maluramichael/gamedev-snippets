@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Durch die Wand: Swept AABB",
+    "en": "Through the Wall: Swept AABB"
+  },
+  "hint": {
+    "de": "Dieselbe Box fliegt in zwei Spuren auf dieselbe Wand: oben mit Überlappungstest, unten mit Sweep. Speed, Winkel und Wanddicke per Chip, stop oder slide (S), Klick in eine Spur oder Hoch/Runter setzt die Starthöhe, Leertaste startet neu.",
+    "en": "The same box flies at the same wall in two lanes: overlap test on top, sweep below. Chips set speed, angle and wall thickness, stop or slide (S), a click in a lane or up/down sets the start height, Space restarts."
+  },
+  "post": {
+    "de": "durch-die-wand-swept-aabb",
+    "en": "through-the-wall-swept-aabb"
+  },
+  "repo": "swept-aabb",
+  "category": "physics",
+  "publishAt": "2027-01-15T08:00:00+01:00"
+}
