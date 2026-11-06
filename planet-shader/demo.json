@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Planeten aus Rauschen",
+    "en": "Planets From Noise"
+  },
+  "hint": {
+    "de": "Ziehen dreht die Kamera, das Mausrad zoomt. Die Chips wechseln den Planeten und die Abbildung (3D-Rauschen gegen Länge und Breite), die Oktaven, Atmosphäre, Wolken und Drehung.",
+    "en": "Drag to orbit, wheel to zoom. The chips switch the planet and the mapping (3D noise against longitude and latitude), the octaves, atmosphere, clouds and spin."
+  },
+  "post": {
+    "de": "planeten-aus-rauschen",
+    "en": "planets-from-noise"
+  },
+  "repo": "planet-shader",
+  "category": "space",
+  "publishAt": "2027-12-10T08:00:00+01:00"
+}
