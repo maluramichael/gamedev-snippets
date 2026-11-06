@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Der Spieler ist berechenbar: N-Gramme",
+    "en": "Predicting the Player: N-Grams"
+  },
+  "hint": {
+    "de": "Schere, Stein, Papier gegen eine KI, die nur zählt. Spiel selbst (R, P, S) oder lass einen simulierten Spieler mit Gewohnheit antreten, stell die Ordnung N ein und sieh, wie die Trefferquote über die 33 Prozent des Zufalls steigt.",
+    "en": "Rock paper scissors against an AI that only counts. Play yourself (R, P, S) or let a simulated player with a habit take over, set the order N and watch the hit rate climb above the 33 percent of a coin flip."
+  },
+  "post": {
+    "de": "n-gramme-spieler-vorhersagen",
+    "en": "predicting-the-player"
+  },
+  "repo": "ngram-predictor",
+  "category": "ai",
+  "publishAt": "2027-11-19T08:00:00+01:00"
+}
