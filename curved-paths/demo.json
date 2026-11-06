@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Kurven: Bezier und Kreisbögen",
+    "en": "Curves: Bezier and Arcs"
+  },
+  "hint": {
+    "de": "P0, C und P1 ziehen. Orange Kante, orange Punkte und Auto: der naive Weg. Teal: Offset an der Normalen und gleiche Abstände auf der Strecke.",
+    "en": "Drag P0, C and P1. Orange edge, dots and car: the naive way. Teal: offset along the normal and equal steps in distance."
+  },
+  "post": {
+    "de": "kurven-bezier-und-kreisboegen",
+    "en": "curves-bezier-and-arcs"
+  },
+  "repo": "curved-paths",
+  "category": "graphics",
+  "publishAt": "2027-11-19T08:00:00+01:00"
+}
