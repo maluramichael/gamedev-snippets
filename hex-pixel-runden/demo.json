@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Von der Maus zum Hex",
+    "en": "From Mouse to Hex"
+  },
+  "hint": {
+    "de": "Maus über die Hexfelder bewegen. Naiv rundet q, r und s einzeln (orange Flächen: dort ist das Ergebnis kein Hex), Rounded setzt die Komponente mit dem größten Fehler zurück. Im Linienmodus ein Klick setzt den Start, die Maus den Endpunkt. Spitz oder flach umschalten, Nudge verschiebt die Linie minimal.",
+    "en": "Move the mouse over the hexes. Naive rounds q, r and s on their own (orange tiles: the result is no hex there), Rounded resets the component with the biggest error. In line mode a click sets the start, the mouse is the end. Switch pointy or flat, Nudge shifts the line by a hair."
+  },
+  "post": {
+    "de": "von-der-maus-zum-hex",
+    "en": "from-mouse-to-hex"
+  },
+  "repo": "hex-pixel-runden",
+  "category": "grid",
+  "publishAt": "2026-12-11T08:00:00+01:00"
+}
