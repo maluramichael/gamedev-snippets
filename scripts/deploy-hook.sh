@@ -29,7 +29,7 @@ while read -r old new ref; do
     cd "$WORK"
 
     echo "--> site tests"
-    node --test site/test/index.test.mjs site/test/reindex.test.mjs
+    node --test site/test/index.test.mjs site/test/reindex.test.mjs site/test/categories.test.mjs
     echo "--> native build and ctest"
     sh scripts/build.sh native
     echo "--> web build"
@@ -37,7 +37,7 @@ while read -r old new ref; do
     sh scripts/fetch-pyodide.sh build/web/_shared/pyodide
 
     mkdir -p build/web/_shared
-    cp site/index.js site/bar.js site/gallery.js site/site.css site/reindex.sh build/web/_shared/
+    cp site/index.js site/bar.js site/gallery.js site/categories.js site/site.css site/reindex.sh build/web/_shared/
     cp -r site/fonts build/web/_shared/fonts
     cp site/index.html build/web/index.html
 

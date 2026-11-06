@@ -1,7 +1,17 @@
 {
-  "title": { "de": "Pixel-Wasser", "en": "Pixel water" },
-  "hint": { "de": "Maus gedrückt halten malt Wasser, Sand oder Stein. Die Chips wechseln Material und Pinselgröße.", "en": "Hold the mouse to paint water, sand or stone. The chips change material and brush size." },
-  "post": { "de": "pixel-wasser", "en": "pixel-water" },
+  "title": {
+    "de": "Pixel-Wasser",
+    "en": "Pixel water"
+  },
+  "hint": {
+    "de": "Maus gedrückt halten malt Wasser, Sand oder Stein. Die Chips wechseln Material und Pinselgröße.",
+    "en": "Hold the mouse to paint water, sand or stone. The chips change material and brush size."
+  },
+  "post": {
+    "de": "pixel-wasser",
+    "en": "pixel-water"
+  },
   "repo": "pixel-water",
+  "category": "graphics",
   "publishAt": "2027-01-08T08:00:00+01:00"
 }

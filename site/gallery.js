@@ -1,7 +1,9 @@
 import { isPostLive, listedDemos, KOFI_URL } from "/_shared/index.js";
+import { categoryCounts, categoryFromHash, categoryLabel, filterByCategory } from "/_shared/categories.js";
 
 const lang = (navigator.language || "en").startsWith("de") ? "de" : "en";
 const cards = document.getElementById("cards");
+const filters = document.getElementById("filters");
 
 async function loadDemo(name) {
   try {
@@ -70,7 +72,35 @@ try {
     empty.textContent = lang === "de" ? "Noch keine Demos vorhanden." : "No demos yet.";
     cards.replaceWith(empty);
   } else {
-    cards.replaceChildren(...shown.map(card));
+    const show = () => {
+      const active = categoryFromHash(location.hash, shown);
+      cards.replaceChildren(...filterByCategory(shown, active).map(card));
+      for (const button of filters.querySelectorAll("button")) {
+        button.setAttribute("aria-pressed", String(button.dataset.key === active));
+      }
+    };
+    const counts = categoryCounts(shown);
+    if (counts.length > 1) {
+      const all = [{ key: "all", count: shown.length }, ...counts];
+      filters.replaceChildren(
+        ...all.map(({ key, count }) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.dataset.key = key;
+          button.append(key === "all" ? (lang === "de" ? "Alle" : "All") : categoryLabel(key, lang));
+          const number = document.createElement("span");
+          number.textContent = String(count);
+          button.append(number);
+          button.addEventListener("click", () => {
+            history.replaceState(null, "", key === "all" ? location.pathname : `#${key}`);
+            show();
+          });
+          return button;
+        }),
+      );
+    }
+    window.addEventListener("hashchange", show);
+    show();
   }
 } catch (error) {
   cards.textContent = lang === "de" ? "Die Demo-Liste konnte nicht geladen werden." : "The demo list could not be loaded.";

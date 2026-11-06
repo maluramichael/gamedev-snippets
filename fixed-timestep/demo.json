@@ -1,7 +1,17 @@
 {
-  "title": { "de": "Fester Zeitschritt: Zeichnen mit Interpolation", "en": "Fixed timestep: drawing with interpolation" },
-  "hint": { "de": "Klick wechselt die Update-Rate der Logik. Das orange Quadrat ruckelt von Schritt zu Schritt, das türkise wird zwischen zwei Schritten interpoliert. Taste S simuliert einen Hänger.", "en": "Click to change the logic update rate. The orange square jumps from step to step, the teal one is interpolated between two steps. Key S simulates a stall." },
-  "post": { "de": "fester-zeitschritt", "en": "fixed-timestep-drawing-with-interpolation" },
+  "title": {
+    "de": "Fester Zeitschritt: Zeichnen mit Interpolation",
+    "en": "Fixed timestep: drawing with interpolation"
+  },
+  "hint": {
+    "de": "Klick wechselt die Update-Rate der Logik. Das orange Quadrat ruckelt von Schritt zu Schritt, das türkise wird zwischen zwei Schritten interpoliert. Taste S simuliert einen Hänger.",
+    "en": "Click to change the logic update rate. The orange square jumps from step to step, the teal one is interpolated between two steps. Key S simulates a stall."
+  },
+  "post": {
+    "de": "fester-zeitschritt",
+    "en": "fixed-timestep-drawing-with-interpolation"
+  },
   "repo": "fixed-timestep",
+  "category": "time",
   "publishAt": "2026-11-27T08:00:00+01:00"
 }

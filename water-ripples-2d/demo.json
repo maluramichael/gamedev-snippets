@@ -1,7 +1,17 @@
 {
-  "title": { "de": "Wasserwellen in 2D", "en": "2D water ripples" },
-  "hint": { "de": "Klick und Ziehen erzeugen Wellen. Die Chips stellen die Dämpfung ein und schalten den Regen an oder aus.", "en": "Click and drag to make waves. The chips set the damping and switch the rain on or off." },
-  "post": { "de": "wasserwellen-in-2d", "en": "2d-water-ripples" },
+  "title": {
+    "de": "Wasserwellen in 2D",
+    "en": "2D water ripples"
+  },
+  "hint": {
+    "de": "Klick und Ziehen erzeugen Wellen. Die Chips stellen die Dämpfung ein und schalten den Regen an oder aus.",
+    "en": "Click and drag to make waves. The chips set the damping and switch the rain on or off."
+  },
+  "post": {
+    "de": "wasserwellen-in-2d",
+    "en": "2d-water-ripples"
+  },
   "repo": "water-ripples-2d",
+  "category": "graphics",
   "publishAt": "2027-01-15T08:00:00+01:00"
 }

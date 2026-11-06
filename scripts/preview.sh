@@ -33,7 +33,7 @@ if [ "$MODE" = web ] || [ "$MODE" = both ]; then
     mkdir -p "$OUT"
     rsync -a --delete "$HOST:$DIR/build/web/" "$OUT/"
     mkdir -p "$OUT/_shared"
-    cp site/index.js site/bar.js site/gallery.js site/site.css "$OUT/_shared/"
+    cp site/index.js site/bar.js site/gallery.js site/categories.js site/site.css "$OUT/_shared/"
     cp -r site/fonts "$OUT/_shared/"
     cp site/index.html "$OUT/index.html"
     echo "preview ready in $OUT"

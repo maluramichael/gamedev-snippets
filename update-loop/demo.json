@@ -1,7 +1,17 @@
 {
-  "title": { "de": "Update Loop mit festem Zeitschritt", "en": "Update loop with a fixed timestep" },
-  "hint": { "de": "Das Quadrat bewegt sich in festen 60 Updates pro Sekunde, egal wie schnell gerendert wird.", "en": "The square moves in fixed 60 updates per second, no matter how fast frames are drawn." },
-  "post": { "de": "update-loop", "en": "update-loop" },
+  "title": {
+    "de": "Update Loop mit festem Zeitschritt",
+    "en": "Update loop with a fixed timestep"
+  },
+  "hint": {
+    "de": "Das Quadrat bewegt sich in festen 60 Updates pro Sekunde, egal wie schnell gerendert wird.",
+    "en": "The square moves in fixed 60 updates per second, no matter how fast frames are drawn."
+  },
+  "post": {
+    "de": "update-loop",
+    "en": "update-loop"
+  },
   "repo": "update-loop",
+  "category": "time",
   "publishAt": "2026-11-13T08:00:00+01:00"
 }

@@ -57,9 +57,13 @@ Every demo is one folder. CMake finds it by its `demo.json`, there is no list to
   "hint": { "de": "Ein Satz, was man in der Demo tun kann.", "en": "One sentence on what to do in the demo." },
   "post": { "de": "<de-slug>", "en": "<en-slug>" },
   "repo": "<name>",
+  "category": "physics",
   "publishAt": "2026-12-04T08:00:00+01:00"
 }
 ```
+
+`category` is one key of `site/categories.js` (`terrain`, `grid`, `ai`, `physics`, `graphics`, `gameplay`, `time`). The gallery shows one filter
+chip per category that has demos. Pick the topic the demo teaches, not the technique it happens to use.
 
 The en slug is the slug the English title gets on malura.de (lowercase, hyphens, no umlauts, no special characters).
 
