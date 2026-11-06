@@ -19,6 +19,16 @@
 
 namespace gd {
 
+/// How the 960x540 canvas maps to the drawing buffer. In the browser the page CSS already forces the canvas to 16:9, but the buffer
+/// size is rounded to whole pixels (an iframe 403.875 px high is 403 px in its viewport), so a letterboxed canvas would leave a
+/// light 1 px strip at the sides. Stretching changes the aspect by less than a tenth of a percent there. Natively the window can
+/// be any shape, so it stays letterboxed.
+#ifdef __EMSCRIPTEN__
+inline constexpr SDL_RendererLogicalPresentation kLogicalPresentation = SDL_LOGICAL_PRESENTATION_STRETCH;
+#else
+inline constexpr SDL_RendererLogicalPresentation kLogicalPresentation = SDL_LOGICAL_PRESENTATION_LETTERBOX;
+#endif
+
 struct Color {
     Uint8 r, g, b, a = 255;
 };

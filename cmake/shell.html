@@ -6,9 +6,14 @@
 html,body{margin:0;height:100%;background:#fafaf9}
 body{display:flex;flex-direction:column;align-items:center;justify-content:center}
 canvas{display:block;aspect-ratio:16/9;width:min(100vw,calc((100vh - var(--bar,0px)) * 16 / 9)) !important;height:auto !important;outline:none}
+/* Embedded (malura.de) the iframe is 16:9 by construction. Deriving the width from the height would round it down: a 403.875 px
+   iframe height is 403 px in the viewport, so the canvas came out 716.4 instead of 718 px wide and left a light strip at each side. */
+html.embed canvas{width:100vw !important}
+html.embed,html.embed body{overflow:hidden}
 .demo-bar{width:100%}
 </style></head>
 <body><canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+<script>if(location.search.indexOf('embed=1')>-1)document.documentElement.classList.add('embed');</script>
 <script>var Module={canvas:document.getElementById('canvas')};</script>
 {{{ SCRIPT }}}
 <script type="module" src="/_shared/bar.js"></script>

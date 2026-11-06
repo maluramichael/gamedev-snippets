@@ -268,7 +268,7 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char** argv) {
         SDL_Log("font atlas failed: %s", SDL_GetError());
         return SDL_APP_FAILURE;
     }
-    SDL_SetRenderLogicalPresentation(app->renderer, kWidth, kHeight, SDL_LOGICAL_PRESENTATION_LETTERBOX);
+    SDL_SetRenderLogicalPresentation(app->renderer, kWidth, kHeight, gd::kLogicalPresentation);
     SDL_SetRenderVSync(app->renderer, 1);
     app->scene.light = rt::lightFromMouse(app->camera, 0.33F, 0.74F, kView.w / kView.h);  // a start position with shadows to look at
     if (!setResolution(*app, app->resolution)) return SDL_APP_FAILURE;

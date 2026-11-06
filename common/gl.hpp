@@ -180,11 +180,21 @@ struct Window {
         SDL_GetWindowSizeInPixels(window, &pw, &ph);
         pw = std::max(pw, 1);
         ph = std::max(ph, 1);
+#ifdef __EMSCRIPTEN__
+        // The page CSS forces the canvas to 16:9, but the buffer is rounded to whole pixels. Letterboxing that would leave a
+        // light 1 px strip at the sides of an embedded demo, so fill the buffer (the aspect changes by less than 0.1 %).
+        scale = static_cast<float>(pw) / kWidth;
+        vw = pw;
+        vh = ph;
+        vx = 0;
+        vy = 0;
+#else
         scale = std::min(static_cast<float>(pw) / kWidth, static_cast<float>(ph) / kHeight);
         vw = static_cast<int>(std::lround(kWidth * scale));
         vh = static_cast<int>(std::lround(kHeight * scale));
         vx = (pw - vw) / 2;
         vy = (ph - vh) / 2;
+#endif
         glViewport(0, 0, pw, ph);
         glClearColor(kPaper.r / 255.0F, kPaper.g / 255.0F, kPaper.b / 255.0F, 1.0F);
         glClear(GL_COLOR_BUFFER_BIT);

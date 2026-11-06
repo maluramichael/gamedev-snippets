@@ -15,7 +15,7 @@ Every demo is one folder. CMake finds it by its `demo.json`, there is no list to
 
 ## Look (same on every demo)
 
-* Canvas is **960x540**. Call `SDL_SetRenderLogicalPresentation(renderer, 960, 540, SDL_LOGICAL_PRESENTATION_LETTERBOX)` right
+* Canvas is **960x540**. Call `SDL_SetRenderLogicalPresentation(renderer, 960, 540, gd::kLogicalPresentation)` right
   after the renderer exists and `SDL_ConvertEventToRenderCoordinates(renderer, event)` at the top of `SDL_AppEvent`, so the
   demo scales with the page and the mouse maps correctly.
 * Create the window with `SDL_WINDOW_HIGH_PIXEL_DENSITY` (`SDL_CreateWindowAndRenderer(title, 960, 540, SDL_WINDOW_HIGH_PIXEL_DENSITY, ...)`,
