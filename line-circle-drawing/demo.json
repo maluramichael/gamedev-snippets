@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Linien und Kreise im Raster",
+    "en": "Lines and Circles on a Grid"
+  },
+  "hint": {
+    "de": "A und B ziehen. Linie: Lerp, Bresenham und Supercover im Vergleich, mit Rechtsklick Wände setzen. Kreis: Distanztest gegen Midpoint.",
+    "en": "Drag A and B. Line: compare lerp, Bresenham and supercover, right click draws walls. Circle: distance test against midpoint."
+  },
+  "post": {
+    "de": "linien-und-kreise-im-raster",
+    "en": "lines-and-circles-on-a-grid"
+  },
+  "repo": "line-circle-drawing",
+  "category": "grid",
+  "publishAt": "2027-08-20T08:00:00+02:00"
+}

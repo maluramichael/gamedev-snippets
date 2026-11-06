@@ -62,7 +62,7 @@ Every demo is one folder. CMake finds it by its `demo.json`, there is no list to
 }
 ```
 
-`category` is one key of `site/categories.js` (`terrain`, `grid`, `ai`, `physics`, `graphics`, `gameplay`, `time`). The gallery shows one filter
+`category` is one key of `site/categories.js` (`terrain`, `grid`, `ai`, `physics`, `graphics`, `gameplay`, `time`, `space`). The gallery shows one filter
 chip per category that has demos. Pick the topic the demo teaches, not the technique it happens to use.
 
 The en slug is the slug the English title gets on malura.de (lowercase, hyphens, no umlauts, no special characters).

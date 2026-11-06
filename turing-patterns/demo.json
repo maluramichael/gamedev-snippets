@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Turing-Muster",
+    "en": "Turing Patterns"
+  },
+  "hint": {
+    "de": "Mit der Maus Chemikalie malen (Rechtsklick radiert), Preset wählen, in der Feed-Kill-Karte ziehen und zusehen, wie das Muster umkippt. Die orangen Schalter zeigen zwei typische Fehler.",
+    "en": "Paint chemical with the mouse (right click erases), pick a preset, drag in the feed-kill map and watch the pattern flip. The orange switches show two typical mistakes."
+  },
+  "post": {
+    "de": "turing-muster",
+    "en": "turing-patterns"
+  },
+  "repo": "turing-patterns",
+  "category": "terrain",
+  "publishAt": "2027-08-13T08:00:00+02:00"
+}

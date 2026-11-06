@@ -7,6 +7,7 @@ export const CATEGORIES = [
   { key: "graphics", de: "Grafik", en: "Graphics" },
   { key: "gameplay", de: "Gameplay & Balance", en: "Gameplay & Balance" },
   { key: "time", de: "Zeit & Bewegung", en: "Time & Motion" },
+  { key: "space", de: "Weltraum", en: "Space" },
 ];
 
 /** Categories that have at least one demo, in CATEGORIES order, with their count. Unknown keys are ignored. */

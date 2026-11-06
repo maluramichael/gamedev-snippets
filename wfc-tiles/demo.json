@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Wave Function Collapse",
+    "en": "Wave Function Collapse"
+  },
+  "hint": {
+    "de": "Die Karte baut sich aus 29 Tiles selbst auf. Klick auf eine Zelle kollabiert sie, die Geschwindigkeits-Chips zeigen die Propagation, Zufallsreihenfolge erzeugt Widersprüche.",
+    "en": "The map builds itself from 29 tiles. Click a cell to collapse it, the speed chips show the propagation, random order produces contradictions."
+  },
+  "post": {
+    "de": "wave-function-collapse",
+    "en": "wave-function-collapse"
+  },
+  "repo": "wfc-tiles",
+  "category": "terrain",
+  "publishAt": "2027-07-23T08:00:00+02:00"
+}
