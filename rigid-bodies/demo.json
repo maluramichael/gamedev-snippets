@@ -1,0 +1,7 @@
+{
+  "title": { "de": "Rigid Bodies", "en": "Rigid bodies" },
+  "hint": { "de": "Klick auf freie Fläche erzeugt einen Körper, ziehen am Körper zerrt ihn per Feder durch die Szene, R leert alles.", "en": "Click empty space to spawn a body, drag a body to pull it around with a spring, R clears the scene." },
+  "post": { "de": "rigid-bodies", "en": "rigid-bodies" },
+  "repo": "rigid-bodies",
+  "publishAt": "2027-01-01T08:00:00+01:00"
+}
