@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Possibility Map: Wo könnte die Wache sein?",
+    "en": "Possibility Map: Where Could the Guard Be?"
+  },
+  "hint": {
+    "de": "WASD läuft, die Maus dreht den Blickkegel. Fragezeichen sind Zellen, in denen die Wache sein könnte. Trifft der Kegel eine, muss die KI entscheiden. Naive zeigt den klassischen Fehler, Medipack teilt die Wolke, Noisy floor macht die Tür laut, der Regler stellt das Ausbreitungstempo ein.",
+    "en": "WASD walks, the mouse turns the view cone. Question marks are cells where the guard could be. When the cone touches one, the AI has to decide. Naive shows the classic bug, Medipack forks the cloud, Noisy floor makes the door loud, the slider sets the spread speed."
+  },
+  "post": {
+    "de": "possibility-map",
+    "en": "possibility-map-where-could-the-guard-be"
+  },
+  "repo": "possibility-map",
+  "category": "ai",
+  "publishAt": "2028-02-04T08:00:00+01:00"
+}
