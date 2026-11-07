@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Computer aus Draht: Logikgatter in Wireworld",
+    "en": "A Computer Made of Wire: Logic Gates in Wireworld"
+  },
+  "hint": {
+    "de": "Fünf fertige Schaltungen (Clock, Diode, OR, XOR, Half adder) oder frei zeichnen: linke Maustaste malt, rechte löscht, Head setzt ein Elektron auf ein Drahtfeld. Bei den Gattern schickt die Demo zu Beginn jeder Runde Elektronen in die eingeschalteten Eingänge, ein Klick auf eine Tabellenzeile (oder die Tasten A und B) schaltet sie um. Die Tabelle wird gemessen, nicht gespeichert. Die beiden Regeln mit bug sind die typischen Implementierungsfehler und zeigen, was sie mit den Gattern machen.",
+    "en": "Five ready-made circuits (Clock, Diode, OR, XOR, Half adder) or draw your own: left mouse paints, right mouse erases, Head puts an electron on a wire cell. For the gates the demo sends electrons into the switched-on inputs at the start of every round, a click on a table row (or the keys A and B) switches them. The table is measured, not stored. The two rules marked bug are the typical implementation mistakes and show what they do to the gates."
+  },
+  "post": {
+    "de": "wireworld-logikgatter",
+    "en": "a-computer-made-of-wire-logic-gates-in-wireworld"
+  },
+  "repo": "wireworld-gates",
+  "category": "gameplay",
+  "publishAt": "2028-05-19T08:00:00+02:00"
+}
