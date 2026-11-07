@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "256 Welten: elementare Zellularautomaten",
+    "en": "256 Worlds: Elementary Cellular Automata"
+  },
+  "hint": {
+    "de": "Ein Klick auf die untere Zelle einer Karte kippt dieses Bit der Regel, die Zeile entwickelt sich nach unten. Die Chips laden bekannte Regeln, Mirror und Complement bilden die verwandte Regel. Variants zeigt die vier verwandten Regeln nebeneinander: dasselbe Bild, gespiegelt oder invertiert.",
+    "en": "A click on the lower cell of a card flips that bit of the rule, the row evolves downward. The chips load well-known rules, Mirror and Complement switch to the related rule. Variants shows the four related rules side by side: the same picture, flipped or inverted."
+  },
+  "post": {
+    "de": "elementare-zellularautomaten",
+    "en": "elementary-cellular-automata"
+  },
+  "repo": "elementary-rules",
+  "category": "terrain",
+  "publishAt": "2027-12-24T08:00:00+01:00"
+}

@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Zwei Segmente, ein Dreieck: Kosinussatz-IK",
+    "en": "Two Bones, One Triangle: Law-of-Cosines IK"
+  },
+  "hint": {
+    "de": "Die Maus ist das Ziel des Arms. Der teal Ring zeigt, was erreichbar ist, die zwei Chips links wählen das Knie, Naive zeigt die Formel ohne Bereichsprüfung, Equal lengths lässt das Loch verschwinden.",
+    "en": "The mouse is the arm's target. The teal ring is what it can reach, the two chips on the left pick the knee, Naive shows the formula without a range check, Equal lengths makes the hole disappear."
+  },
+  "post": {
+    "de": "zwei-segmente-kosinussatz-ik",
+    "en": "two-bone-ik-law-of-cosines"
+  },
+  "repo": "two-bone-ik",
+  "category": "physics",
+  "publishAt": "2027-12-17T08:00:00+01:00"
+}
