@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Zufall aus einer Regel: Rule 30",
+    "en": "Randomness From One Rule: Rule 30"
+  },
+  "hint": {
+    "de": "Links Rule 30 aus einer schwarzen Zelle, orange die Zellen, die den Bitstrom speisen. Rechts die Bits als 256x256-Bild mit Einsen, längstem Lauf und Periode. Quelle wählen (Rule 30 Mitte oder linke Seite, schlechter LCG zum Vergleich), die Zeilenberechnung zellweise oder 64 Zellen pro Wort umschalten und die Rechenzeit vergleichen.",
+    "en": "Left, Rule 30 from one black cell, in orange the cells that feed the bit stream. Right, the bits as a 256x256 image with ones, longest run and period. Pick a source (Rule 30 center or left side, a bad LCG for comparison), switch the row update between one cell at a time and 64 cells per word, and compare the compute time."
+  },
+  "post": {
+    "de": "zufall-aus-rule-30",
+    "en": "randomness-from-one-rule-rule-30"
+  },
+  "repo": "rule-30-random",
+  "category": "gameplay",
+  "publishAt": "2028-01-04T08:00:00+01:00"
+}

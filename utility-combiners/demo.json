@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Utility AI: Wünsche kombinieren",
+    "en": "Utility AI: Combining Considerations"
+  },
+  "hint": {
+    "de": "Ein Dorfbewohner wählt alle 0,1 s die Aktion mit dem höchsten Score. Kombinierer, Trägheit und Antwortkurven umschalten, einen Balken ziehen setzt Hunger, Müdigkeit, Arbeitslust oder Vorrat.",
+    "en": "A villager picks the highest-scoring action every 0.1 s. Switch the combiner, inertia and response curves, drag a bar to set hunger, fatigue, drive or larder."
+  },
+  "post": {
+    "de": "utility-ai-kombinieren",
+    "en": "utility-ai-combining-considerations"
+  },
+  "repo": "utility-combiners",
+  "category": "ai",
+  "publishAt": "2028-01-07T08:00:00+01:00"
+}

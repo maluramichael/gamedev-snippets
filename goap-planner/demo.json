@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "GOAP: KI, die ihren Plan sucht",
+    "en": "GOAP: AI That Searches for Its Plan"
+  },
+  "hint": {
+    "de": "Figur wählen und zusehen, wie sie ihren Plan sucht. Ein Klick auf die Tür sperrt oder verbarrikadiert sie, die Figur plant beim nächsten Schritt neu. Script spielt dieselbe Aufgabe als feste Abfolge, Crates fügt Kisten hinzu, durch die sich die Suche arbeiten muss.",
+    "en": "Pick a character and watch it search for its plan. A click on the door locks or barricades it, the agent replans at its next step. Script runs the same job as a fixed sequence, Crates adds boxes the search has to wade through."
+  },
+  "post": {
+    "de": "goap-planung",
+    "en": "goap-ai-that-searches-for-its-plan"
+  },
+  "repo": "goap-planner",
+  "category": "ai",
+  "publishAt": "2027-12-21T08:00:00+01:00"
+}

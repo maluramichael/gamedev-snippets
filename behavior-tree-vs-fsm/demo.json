@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Zustandsmaschine gegen Behavior Tree",
+    "en": "FSM vs Behavior Tree"
+  },
+  "hint": {
+    "de": "Zwei Wachen, gleiche Aufgabe. Die Maus ist der Spieler, ein Klick macht Lärm. Mit 1 bis 3 kommen neue Anforderungen dazu, die Zähler zeigen, was das in Kanten und Knoten kostet. Mit 4 wird der Baum passiv, mit 5 bekommt die Zustandsmaschine ein History-Zeichen.",
+    "en": "Two guards, same job. The mouse is the player, a click makes noise. Keys 1 to 3 add new requirements, the counters show what that costs in edges and nodes. Key 4 makes the tree passive, key 5 gives the state machine a history marker."
+  },
+  "post": {
+    "de": "zustandsmaschine-gegen-behavior-tree",
+    "en": "fsm-vs-behavior-tree"
+  },
+  "repo": "behavior-tree-vs-fsm",
+  "category": "ai",
+  "publishAt": "2027-12-31T08:00:00+01:00"
+}
