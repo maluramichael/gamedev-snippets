@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Stimmung und Zusammenbruch",
+    "en": "Mood and Breakdown"
+  },
+  "hint": {
+    "de": "Kolonist anklicken, dann Ereignisse auslösen (Leiche, schlechtes Essen, Beerdigung). Regler für die Grundstimmung, Geschwindigkeit wählen und zwischen RimWorld-Modell und Dwarf-Fortress-Zweizähler umschalten.",
+    "en": "Click a colonist to select, then fire events (corpse, bad meal, funeral). Drag the base mood slider, pick a speed and switch between the RimWorld model and the Dwarf Fortress two-counter model."
+  },
+  "post": {
+    "de": "stimmung-zusammenbruch",
+    "en": "mood-and-breakdown"
+  },
+  "repo": "mood-breakdown",
+  "category": "gameplay",
+  "publishAt": "2028-03-14T08:00:00+01:00"
+}

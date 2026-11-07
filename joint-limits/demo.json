@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Gelenkgrenzen: Der Ellbogen knickt nicht rückwärts",
+    "en": "Joint Limits: The Elbow Does Not Bend Backwards"
+  },
+  "hint": {
+    "de": "Die Maus ist das Ziel des Arms. Die Chips schalten die Grenzen aus, klemmen am Ende oder in jedem Schritt, die Keile an den Gelenken lassen sich an den Kanten ziehen, die Karte zeigt für ein Raster aus Zielen, wo die Spitze landet.",
+    "en": "The mouse is the arm's target. The chips switch the limits off, clamp at the end or clamp in every step, the wedges at the joints can be dragged by their edges, the map shows for a grid of targets where the tip lands."
+  },
+  "post": {
+    "de": "gelenkgrenzen-ik",
+    "en": "joint-limits-the-elbow-does-not-bend-backwards"
+  },
+  "repo": "joint-limits",
+  "category": "physics",
+  "publishAt": "2028-03-10T08:00:00+01:00"
+}

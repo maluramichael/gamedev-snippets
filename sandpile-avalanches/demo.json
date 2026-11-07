@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Sandhaufen: Lawinen ohne Reihenfolge",
+    "en": "Sandpile: Avalanches Without an Order"
+  },
+  "hint": {
+    "de": "Ein Klick wirft ein Korn, gedrückt halten lässt es regnen. Vier Körner in einer Zelle kippen. Pour schüttet 20.000 Körner in die Mitte, mit Rows, Random oder Reverse als Kipp-Reihenfolge: der Fingerabdruck des Endbilds bleibt gleich. Fill 2 und Run zeigen zufällige Körner mit riesig streuenden Lawinen.",
+    "en": "A click drops a grain, hold the button to rain. Four grains in a cell topple. Pour puts 20,000 grains in the middle, with Rows, Random or Reverse as the toppling order: the fingerprint of the end picture stays the same. Fill 2 and Run show random grains with wildly varying avalanches."
+  },
+  "post": {
+    "de": "sandhaufen-lawinen",
+    "en": "sandpile-avalanches-without-an-order"
+  },
+  "repo": "sandpile-avalanches",
+  "category": "physics",
+  "publishAt": "2028-03-21T08:00:00+01:00"
+}

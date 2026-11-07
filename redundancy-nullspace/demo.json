@@ -1,0 +1,11 @@
+{
+  "title": { "de": "Zu viele Gelenke: der Nullraum", "en": "Too Many Joints: The Null Space" },
+  "hint": {
+    "de": "Ein Arm mit vier Segmenten hält die Hand am Ziel, die Chips wählen ein zweites Ziel für die übrigen Gelenke: Ruhehaltung, Gelenkgrenzen meiden oder Entspannung. Einen Ellbogen ziehen oder Schütteln bewegt den Arm, ohne dass die Hand sich rührt, Projektion aus zeigt den Fehler.",
+    "en": "An arm with four segments keeps its hand on the target, the chips pick a second goal for the spare joints: rest pose, stay clear of the joint limits or relax. Dragging an elbow or shaking moves the arm without the hand moving, projection off shows the mistake."
+  },
+  "post": { "de": "nullraum-redundanz", "en": "too-many-joints-the-null-space" },
+  "repo": "redundancy-nullspace",
+  "category": "physics",
+  "publishAt": "2028-03-17T08:00:00+01:00"
+}
