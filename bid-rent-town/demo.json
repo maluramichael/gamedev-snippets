@@ -1,0 +1,11 @@
+{
+  "title": { "de": "Stadtringe aus Bodenpreisen", "en": "Town Rings from Bid Rents" },
+  "hint": {
+    "de": "Drei Wertkurven, das Maximum je Feld entscheidet. Regler ziehen, in die Karte klicken verschiebt das Zentrum, G lässt die Stadt wachsen.",
+    "en": "Three bid curves, the maximum per cell decides. Drag the sliders, click the map to move the centre, G grows the town."
+  },
+  "post": { "de": "stadtringe", "en": "town-rings-from-bid-rents" },
+  "repo": "bid-rent-town",
+  "category": "gameplay",
+  "publishAt": "2028-04-28T08:00:00+02:00"
+}

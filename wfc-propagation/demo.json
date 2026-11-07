@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "WFC: Warum Propagation zählt",
+    "en": "WFC: Why Propagation Matters"
+  },
+  "hint": {
+    "de": "Drei Karten mit demselben Seed: ohne Propagation, nur Nachbarn, volle Kaskade. Klick auf eine Zelle entscheidet sie, die Chips wechseln die Zellreihenfolge, X-ray markiert verlorene Zellen, die noch keiner bemerkt hat.",
+    "en": "Three maps with the same seed: no propagation, neighbors only, full cascade. Click a cell to decide it, the chips switch the cell order, X-ray marks cells that are lost but not noticed yet."
+  },
+  "post": {
+    "de": "wfc-propagation",
+    "en": "wfc-why-propagation-matters"
+  },
+  "repo": "wfc-propagation",
+  "category": "terrain",
+  "publishAt": "2028-05-16T08:00:00+02:00"
+}

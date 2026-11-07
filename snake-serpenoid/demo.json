@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Schlange aus einer Sinuswelle",
+    "en": "A Snake From One Sine Wave"
+  },
+  "hint": {
+    "de": "Eine Sinuswelle läuft durch zwölf Segmente. Mit Rädern (3) wird daraus Vortrieb, auf Eis (1) wackelt die Schlange am Ort. Regler a, b, c ändern Ausschlag, Wellenzahl und Lenkung (Pfeiltasten), W kehrt die Welle um, Orange zeigt das Seitwärtsrutschen.",
+    "en": "One sine wave runs through twelve links. With wheels (3) it becomes forward motion, on ice (1) the snake wiggles in place. Sliders a, b, c set bend, waves and steering (arrow keys), W reverses the wave, orange shows the sideways slip."
+  },
+  "post": {
+    "de": "schlange-sinuswelle",
+    "en": "a-snake-from-one-sine-wave"
+  },
+  "repo": "snake-serpenoid",
+  "category": "graphics",
+  "publishAt": "2028-05-05T08:00:00+02:00"
+}

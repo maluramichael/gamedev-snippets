@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Storyteller: Zufall gegen Fahrplan",
+    "en": "Storytellers: Random vs Schedule"
+  },
+  "hint": {
+    "de": "Drei Storyteller, dieselbe Kolonie, 200 Tage. Einzeln oder alle drei zeigen, mit R eine neue Kolonie würfeln, mit P die Zeitleiste neu abspielen, Leertaste springt ans Ende. Das Histogramm zählt die Abstände zwischen Großangriffen aus 100 langen Läufen.",
+    "en": "Three storytellers, the same colony, 200 days. Show one or all three, press R for a new colony, P to replay the timeline, Space jumps to the end. The histogram counts the gaps between major attacks over 100 long runs."
+  },
+  "post": {
+    "de": "storyteller-zufall-fahrplan",
+    "en": "storytellers-random-vs-schedule"
+  },
+  "repo": "storyteller-timelines",
+  "category": "gameplay",
+  "publishAt": "2028-05-26T08:00:00+02:00"
+}
