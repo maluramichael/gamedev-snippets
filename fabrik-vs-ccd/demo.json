@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "FABRIK gegen CCD: Punkte schieben statt Winkel drehen",
+    "en": "FABRIK vs CCD: Sliding Points Instead of Turning Angles"
+  },
+  "hint": {
+    "de": "Die Maus ist das Ziel der Kette. Die Chips wählen CCD, FABRIK oder Relaxation, die blassen Posen sind die Schritte der letzten Iteration, Stuck stellt die gerade Zwei-Segment-Kette auf, in der alle drei stehen bleiben.",
+    "en": "The mouse is the chain's target. The chips pick CCD, FABRIK or relaxation, the faint poses are the steps of the last iteration, Stuck sets up the straight two-segment chain where all three stand still."
+  },
+  "post": {
+    "de": "fabrik-gegen-ccd",
+    "en": "fabrik-vs-ccd-sliding-points-instead-of-turning-angles"
+  },
+  "repo": "fabrik-vs-ccd",
+  "category": "graphics",
+  "publishAt": "2028-01-14T08:00:00+01:00"
+}

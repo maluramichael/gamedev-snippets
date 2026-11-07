@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Utility AI: Wählen statt Maximieren",
+    "en": "Utility AI: Picking an Action"
+  },
+  "hint": {
+    "de": "Regler ziehen setzt die Bedürfnisse, die Chips wählen die Auswahlregel (Max, Gewichteter Zufall, Band, Dual) oder ein Beispiel. Leertaste würfelt 1000 weitere Entscheidungen. Der Strich im Balken ist die exakte Chance, der Balken das Gewürfelte, orange sind Wahlen unter der Hälfte des besten Scores.",
+    "en": "Drag the sliders to set the needs, the chips pick the selection rule (Max, Weighted, Band, Dual) or an example. Space rolls 1000 more decisions. The tick in a bar is the exact chance, the bar is what was rolled, orange marks picks under half of the best score."
+  },
+  "post": {
+    "de": "aktion-waehlen",
+    "en": "utility-ai-picking-an-action"
+  },
+  "repo": "pick-an-action",
+  "category": "ai",
+  "publishAt": "2028-01-21T08:00:00+01:00"
+}
