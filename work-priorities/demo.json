@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Arbeitsprioritäten wie in RimWorld",
+    "en": "Work Priorities Like RimWorld"
+  },
+  "hint": {
+    "de": "Zelle anklicken schaltet die Priorität 1 bis 4 oder leer durch, Rechtsklick geht zurück. Regel gegen Score vergleicht Laufstrecke und Dauer.",
+    "en": "Click a cell to cycle priority 1 to 4 or empty, right click goes back. Rule against score compares walking distance and time."
+  },
+  "post": {
+    "de": "arbeitsprioritaeten",
+    "en": "work-priorities-like-rimworld"
+  },
+  "repo": "work-priorities",
+  "category": "gameplay",
+  "publishAt": "2028-03-24T08:00:00+01:00"
+}

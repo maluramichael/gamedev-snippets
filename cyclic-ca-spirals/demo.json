@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Spiralen aus Zufall: zyklische Automaten",
+    "en": "Spirals From Noise: Cyclic Cellular Automata"
+  },
+  "hint": {
+    "de": "Jede Zelle hat eine von n Farben im Kreis und springt eine Farbe weiter, sobald genug Nachbarn schon die nächste tragen. Die Chips stellen n, Schwelle und Nachbarschaft ein, ein Klick ins Feld würfelt neues Rauschen. Die Ringe markieren Demons, links und rechts herum gewickelt, der Zähler daneben fällt, bis das ganze Gitter sich nach einer festen Zahl Schritten wiederholt. Buffered gegen In place und Ring gegen Line zeigen die zwei typischen Fehler.",
+    "en": "Every cell has one of n colors on a circle and moves on one color as soon as enough neighbors already carry the next one. The chips set n, threshold and neighborhood, a click in the field rolls new noise. The rings mark demons, wound left or right, and the counter beside them falls until the whole grid repeats after a fixed number of steps. Buffered against In place and Ring against Line show the two typical mistakes."
+  },
+  "post": {
+    "de": "zyklische-automaten-spiralen",
+    "en": "spirals-from-noise-cyclic-cellular-automata"
+  },
+  "repo": "cyclic-ca-spirals",
+  "category": "graphics",
+  "publishAt": "2028-03-31T08:00:00+02:00"
+}
