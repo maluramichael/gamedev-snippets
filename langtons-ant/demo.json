@@ -1,10 +1,16 @@
 {
-  "title": { "de": "Langtons Ameise: Ordnung nach 10.000 Schritten", "en": "Langton's Ant: Order After 10,000 Steps" },
+  "title": {
+    "de": "Langtons Ameise: Ordnung nach 10.000 Schritten",
+    "en": "Langton's Ant: Order After 10,000 Steps"
+  },
   "hint": {
     "de": "Die Ameise dreht auf Weiß rechts, auf Schwarz links und färbt das Feld um. Die Chips wählen Regel und Gittergröße, Speed ist in Schritten pro Sekunde. Nach rund 10.000 chaotischen Schritten baut sie die Autobahn, auf einem kleinen Torus läuft sie in ihr eigenes Chaos zurück. Die anderen Regeln sind Mehrfarb-Ameisen: jeder Buchstabe ist die Drehung für eine Farbe.",
     "en": "The ant turns right on white, left on black and flips the cell. The chips pick the rule and the grid size, speed is in steps per second. After about 10,000 chaotic steps it builds the highway, and on a small torus it walks back into its own mess. The other rules are multi-color ants: every letter is the turn for one color."
   },
-  "post": { "de": "langtons-ameise", "en": "langton-s-ant-order-after-10000-steps" },
+  "post": {
+    "de": "langtons-ameise",
+    "en": "langton-s-ant-order-after-10-000-steps"
+  },
   "repo": "langtons-ant",
   "category": "gameplay",
   "publishAt": "2028-02-25T08:00:00+01:00"
