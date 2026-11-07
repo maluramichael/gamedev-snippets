@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Strandbeest: ein Motor, keine Winkel, ein Gang",
+    "en": "Strandbeest: One Motor, No Angles, One Gait"
+  },
+  "hint": {
+    "de": "Eine Kurbel dreht sich, alle anderen Gelenke ergeben sich aus den Stablängen. Stab wählen und den Regler ziehen (±20 Prozent): die Fußbahn verändert sich, die graue Bahn ist das Original. Sides: first hit wählt an jedem Gelenk den erstbesten Schnittpunkt und baut ein falsches Bein.",
+    "en": "One crank turns, every other joint follows from the rod lengths. Pick a rod and drag the slider (±20 percent): the foot path changes, the gray path is the original. Sides: first hit takes the first intersection at every joint and builds a wrong leg."
+  },
+  "post": {
+    "de": "strandbeest-gestaenge",
+    "en": "strandbeest-one-motor-no-angles-one-gait"
+  },
+  "repo": "jansen-linkage",
+  "category": "physics",
+  "publishAt": "2028-04-11T08:00:00+02:00"
+}

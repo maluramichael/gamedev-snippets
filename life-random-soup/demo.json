@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Zufallssuppe: Wer überlebt im Game of Life?",
+    "en": "Random Soup: What Survives in the Game of Life?"
+  },
+  "hint": {
+    "de": "48 Zufallssuppen (16x16) laufen gleichzeitig auf einer unbegrenzten Fläche. Eine Kachel wird türkis, sobald ihre Zellzahl 120 Generationen lang denselben Rhythmus hält, grau, wenn alles ausgestorben ist. Das Histogramm sammelt die Lebensdauern. Die Chips wählen Dichte, Vergleichsmuster (R-Pentomino, Acorn) und Tempo in Generationen pro Sekunde.",
+    "en": "48 random soups (16x16) run side by side on an unbounded plane. A tile turns teal once its cell count has kept the same rhythm for 120 generations, grey when everything died out. The histogram collects the lifespans. The chips pick the density, a comparison pattern (R-pentomino, acorn) and the speed in generations per second."
+  },
+  "post": {
+    "de": "life-zufallssuppe",
+    "en": "random-soup-what-survives-in-the-game-of-life"
+  },
+  "repo": "life-random-soup",
+  "category": "terrain",
+  "publishAt": "2028-04-21T08:00:00+02:00"
+}

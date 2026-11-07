@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Gleiter und Kanonen im Game of Life",
+    "en": "Gliders and Guns in the Game of Life"
+  },
+  "hint": {
+    "de": "Palette wählen und ins Feld klicken, Rechtsklick löscht. Oben links schießt eine Gosper-Kanone Gleiter, rechts treffen sich zwei. R dreht, F wechselt die Phase des Gleiters, Collision lädt vier Zusammenstöße, Torus oder Walls ändert den Rand. Das Diagramm unten rechts zeigt die Population.",
+    "en": "Pick from the palette and click into the field, right click erases. A Gosper gun in the top left shoots gliders, two gliders meet on the right. R turns, F changes the glider phase, Collision loads four crashes, Torus or Walls changes the edge. The graph in the bottom right shows the population."
+  },
+  "post": {
+    "de": "gleiter-und-kanonen-life",
+    "en": "gliders-and-guns-in-the-game-of-life"
+  },
+  "repo": "life-glider-guns",
+  "category": "physics",
+  "publishAt": "2028-04-07T08:00:00+02:00"
+}

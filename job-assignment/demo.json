@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Arbeiter und Jobs zuordnen",
+    "en": "Assigning Workers to Jobs"
+  },
+  "hint": {
+    "de": "Arbeiter (Kreise) und Jobs (Quadrate) lassen sich ziehen. Chip 1 lässt jeden Arbeiter der Reihe nach den nächsten freien Job nehmen, Chip 2 sucht die kürzeste Gesamtstrecke, Chip 3 dreht die Reihenfolge um. Mit 4 und 5 ändert sich die Anzahl, R würfelt eine neue Aufstellung.",
+    "en": "Drag workers (circles) and jobs (squares). Tool 1 lets every worker take the nearest free job in turn, tool 2 finds the shortest total distance, tool 3 reverses the order. 4 and 5 change the count, R rolls a new layout."
+  },
+  "post": {
+    "de": "jobs-zuordnen",
+    "en": "assigning-workers-to-jobs"
+  },
+  "repo": "job-assignment",
+  "category": "gameplay",
+  "publishAt": "2028-04-14T08:00:00+02:00"
+}

@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Spinnenbeine: Füße bleiben stehen, bis es nicht mehr geht",
+    "en": "Spider Legs: Feet Stay Planted Until They Must Step"
+  },
+  "hint": {
+    "de": "Der Körper folgt der Maus, die Füße bleiben stehen, bis ihr Ziel zu weit weg ist. Die Chips links wählen den Gang (Tripod, Crawl, Free), Lookahead schaltet das Vorauslaufen des Ziels ab, Support zeigt das Stützpolygon der Füße am Boden.",
+    "en": "The body follows the mouse, the feet stay put until their target is too far away. The chips on the left pick the gait (Tripod, Crawl, Free), Lookahead turns off the target running ahead, Support shows the polygon of the feet on the ground."
+  },
+  "post": {
+    "de": "spinnenbeine-schrittregel",
+    "en": "spider-legs-feet-stay-planted-until-they-must-step"
+  },
+  "repo": "spider-foot-placement",
+  "category": "gameplay",
+  "publishAt": "2028-04-04T08:00:00+02:00"
+}

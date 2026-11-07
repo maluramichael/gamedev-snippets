@@ -1,0 +1,3 @@
+# job-assignment
+
+Assigning workers to jobs with SDL3 (C++20, also runs in the browser). Circles are workers, squares are jobs, both can be dragged. Greedy lets every worker take the nearest free job in turn: quick, but the total length depends on who goes first and the paths cross. Optimal solves the assignment problem with the Hungarian method and finds the shortest total length, which never contains a crossing. The card shows both totals, the best and worst greedy result over every order of the workers (up to 8! = 40320) and a brute-force check. The logic is in `logic.hpp` and covered by `test.cpp`, including the comparison against brute force on random matrices and layouts.
