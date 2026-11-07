@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "262.144 Regeln: Life ist nur eine davon",
+    "en": "262,144 Rules: Life Is Just One of Them"
+  },
+  "hint": {
+    "de": "Die Chips B0 bis B8 und S0 bis S8 bauen die Regel zusammen (Geburt und Überleben nach Zahl der lebenden Nachbarn), die Presets laden Life, HighLife, Seeds, Day & Night und Diamoeba mit einer frischen Zufallssuppe. Rechts steht, was der Lauf bisher tut, mit Dichte-Verlauf. Auf dem Feld malen, Rechtsklick löscht. Das R-Pentomino startet unter jeder Regel gleich, der Replikator nur unter HighLife.",
+    "en": "The chips B0 to B8 and S0 to S8 build the rule (birth and survival by the number of live neighbors), the presets load Life, HighLife, Seeds, Day & Night and Diamoeba with a fresh random soup. The panel on the right says what the run does so far, with a density graph. Draw on the grid, right click erases. The R-pentomino starts the same under any rule, the replicator is for HighLife."
+  },
+  "post": {
+    "de": "life-regelraum",
+    "en": "262-144-rules-life-is-just-one-of-them"
+  },
+  "repo": "lifelike-rule-space",
+  "category": "terrain",
+  "publishAt": "2028-05-12T08:00:00+02:00"
+}
