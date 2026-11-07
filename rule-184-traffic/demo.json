@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Stau aus einer Regel: Verkehr mit Rule 184",
+    "en": "Traffic Jams From One Rule: Rule 184"
+  },
+  "hint": {
+    "de": "Jede Zeile ist ein Zeitschritt, die Autos fahren nach rechts. Der Regler ändert die Dichte, ein Klick setzt ein Auto oder eine Lücke, Queue stellt alle Autos hintereinander. Chip 2 aktualisiert die Straße falsch, nämlich an Ort und Stelle.",
+    "en": "Each row is one time step, the cars drive to the right. The slider changes the density, a click adds a car or a gap, Queue lines all cars up in a row. Chip 2 updates the road the wrong way, in place."
+  },
+  "post": {
+    "de": "stau-mit-rule-184",
+    "en": "traffic-jams-from-one-rule-rule-184"
+  },
+  "repo": "rule-184-traffic",
+  "category": "gameplay",
+  "publishAt": "2028-01-28T08:00:00+01:00"
+}

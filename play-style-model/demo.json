@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Spielstil als Vektor",
+    "en": "Play Style as a Vector"
+  },
+  "hint": {
+    "de": "Jede Aktion (Chips oder 1 bis 5) füllt einen Spielstil-Vektor, das Spiel wählt das nächste Ereignis per Skalarprodukt. Umschalter: Profil gegen letzter Zug, Vergessen, neuer Spieler, Beispiel aus dem Kapitel.",
+    "en": "Every move (chips or 1 to 5) fills a play style vector and the game picks the next event by dot product. Switches: profile against last move, forgetting, new player, the example from the chapter."
+  },
+  "post": {
+    "de": "spielstil-vektor",
+    "en": "play-style-as-a-vector"
+  },
+  "repo": "play-style-model",
+  "category": "ai",
+  "publishAt": "2028-03-03T08:00:00+01:00"
+}

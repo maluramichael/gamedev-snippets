@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Petri-Netze: Wer bekommt das MG?",
+    "en": "Petri Nets: Who Gets the Machine Gun?"
+  },
+  "hint": {
+    "de": "Ein Klick auf einen Agenten trifft ihn, trifft er den Schützen, geht das MG zurück ins Netz und der Nächste bekommt es. Die Chips wechseln die Regel (FIFO, Nächster, Score), der Regler die Zahl der Agenten, Taste K trifft den Schützen.",
+    "en": "Click an agent to hit it. When the gunner is hit, the gun token flows back into the net and the next agent gets it. The chips switch the rule (FIFO, Nearest, Score), the slider sets the number of agents, key K hits the gunner."
+  },
+  "post": {
+    "de": "petri-netze",
+    "en": "petri-nets-who-gets-the-machine-gun"
+  },
+  "repo": "petri-arbiter",
+  "category": "ai",
+  "publishAt": "2028-02-18T08:00:00+01:00"
+}

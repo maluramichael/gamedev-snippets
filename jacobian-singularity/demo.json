@@ -1,0 +1,17 @@
+{
+  "title": {
+    "de": "Der gestreckte Arm zuckt: Jacobi-Methoden und Dämpfung",
+    "en": "Why the Stretched Arm Jitters: Jacobian Methods and Damping"
+  },
+  "hint": {
+    "de": "Ein Arm mit drei Segmenten jagt ein Ziel, das an der Reichweite entlangwandert. Die Chips wählen Transponierte, Pseudoinverse oder gedämpfte Methode, der Regler stellt die Dämpfung ein, Ziehen im Feld setzt das Ziel selbst.",
+    "en": "A three-segment arm chases a target that wanders along the edge of its reach. The chips pick transpose, pseudoinverse or damped method, the slider sets the damping, dragging in the field places the target yourself."
+  },
+  "post": {
+    "de": "jacobi-singularitaet-daempfung",
+    "en": "why-the-stretched-arm-jitters-jacobian-methods-and-damping"
+  },
+  "repo": "jacobian-singularity",
+  "category": "physics",
+  "publishAt": "2028-02-11T08:00:00+01:00"
+}
